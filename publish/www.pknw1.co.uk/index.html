@@ -23,7 +23,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=RReFBp"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=RReFBp" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=ynEkc1"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=ynEkc1" type="text/css">
 
   
   <style>.modal-content {
@@ -249,7 +249,7 @@ padding-bottom: (@paddingBottom * 15px);
         </div>
     </div>
                     </div>
-                    
+                    <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-7" href="javascript:OpenModal('links')">Links</a></div>
 
                 </div>
   
@@ -505,7 +505,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	
 	
-	<div><div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="helpLabel" aria-hidden="true">  <div class="modal-dialog  " style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="helpLabel">Contact</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="help_body"><br><br><br>&lt;div class="row justify-content-center"&gt;<br>            &lt;div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid"&gt;<br>                    &lt;div class="row"&gt;<br>                        &lt;div hidden="hidden" data-form-alert="" class="alert alert-success col-12"&gt;&lt;/div&gt;<br>                        &lt;div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"&gt;<br>                            Oops...! some problem!<br>                        &lt;/div&gt;<br>                    &lt;/div&gt;<br>                    &lt;div class="dragArea row"&gt;<br>                        &lt;div class="modal-body display-7" id="help_body"&gt;<br>                        &lt;div class="col-md col-sm-12 form-group mb-3" data-for="name"&gt;<br>                            &lt;input type="text" name="inputText" id="inputText" placeholder="Name" data-form-field="name" class="form-control" value=""&gt;<br>                        &lt;/div&gt;<br>                        <br>                        &lt;div class="col-12 form-group mb-3" data-for="phone"&gt;<br>                            &lt;input type="tel" name="phone" id="inputNumber" placeholder="Phone" data-form-field="phone" class="form-control" value="" &gt;<br>                        &lt;/div&gt;<br>                        &lt;div class="col-12 form-group mb-3" data-for="textarea"&gt;<br>                            &lt;textarea name="textarea" id="inputMessage" placeholder="Message" data-form-field="textarea" class="form-control" &gt;&lt;/textarea&gt;<br>                        &lt;/div&gt;<br>                        &lt;div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"&gt;<br>                            &lt;button id="publishButton" class="btn btn-danger display-7 animate__animated animate__delay-1s animate__fadeIn"&gt;Send Message!&lt;/button&gt;&lt;p id="result"&gt;&lt;/p&gt;&lt;/div&gt;<br>                        &lt;/div&gt;<br><br>                    &lt;/div&gt;<br>            &lt;/div&gt;<br>        &lt;/div&gt;</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Close</a></div></div>    </div>  </div></div><script> 
+	<div><div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="helpLabel" aria-hidden="true">  <div class="modal-dialog  " style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="helpLabel">Contact</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="help_body">
+
+
+<div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12"></div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="modal-body display-7" id="help_body">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="inputText" id="inputText" placeholder="Name" data-form-field="name" class="form-control" value="">
+                        </div>
+                        
+                        <div class="col-12 form-group mb-3" data-for="phone">
+                            <input type="tel" name="phone" id="inputNumber" placeholder="Phone" data-form-field="phone" class="form-control" value="">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" id="inputMessage" placeholder="Message" data-form-field="textarea" class="form-control"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button id="publishButton" class="btn btn-danger display-7 animate__animated animate__delay-1s animate__fadeIn">Send Message!</button><p id="result"></p></div>
+                        </div>
+
+                    </div>
+            </div>
+        </div></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Close</a></div></div>    </div>  </div></div><script> 
 document.addEventListener("DOMContentLoaded", function() { 
   if(typeof jQuery === "function") {
     $("#help").on("hidden.bs.modal", function () { 
@@ -709,7 +738,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	</script>
 
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/1542662" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-builder.html">AI Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/sociallikes/social-likes.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/1542662" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-generator.html">AI Website Generator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/sociallikes/social-likes.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
 
 
