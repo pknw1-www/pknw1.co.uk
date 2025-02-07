@@ -1355,7 +1355,29 @@ a {
 }
 .cid-uBVaci2R2w .mbr-text,
 .cid-uBVaci2R2w .mbr-section-btn {
-  color: #ffffff;
+  color: #ffa600;
+}
+.cid-uBVaci2R2w .content-head {
+  max-width: 800px;
+}
+.cid-uBVaci2R2w .mbr-iconfont-social {
+  margin: 0.5rem;
+  font-size: 32px;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffa600;
+  border: 2px solid #ffa600;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s;
+}
+.cid-uBVaci2R2w .mbr-iconfont-social:before {
+  padding: 0.6rem;
+}
+.cid-uBVaci2R2w .mbr-iconfont-social:hover {
+  background-color: #ffa600;
+  color: #000000;
 }
 .cid-uBVo04l2JM {
   padding-top: 6rem;
