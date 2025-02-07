@@ -23,7 +23,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=gtzh9H"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=gtzh9H" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=ImyIyR"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=ImyIyR" type="text/css">
 
   
   <style>.modal-content {
@@ -32,7 +32,90 @@ color: #ffa600;
 }
 
 </style>
-  
+  <style>
+padding-top: (@paddingTop * 15px);
+padding-bottom: (@paddingBottom * 15px);
+
+& when (@bg-type = "color") {
+  background-color: @bg-value;
+}
+
+& when (@bg-type = "image") {
+  background-image: url(@bg-value);
+}
+
+.mbr-fallback-image.disabled {
+  display: none;
+}
+
+.mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  & when (@bg-type = 'video') {
+    background-image: url(@fallBackImage);
+  }
+}
+
+.media-container-row {
+  justify-content: space-between;
+
+  & when not (@showTitle) {
+
+    & when not (@showText) {
+      justify-content: center;
+    }
+  }
+}
+
+.text-content {
+  max-width: 50%;
+
+  @media (max-width: 768px) {
+    max-width: none;
+  }
+}
+
+.mbr-iconfont-social {
+  margin: 0.5rem;
+  font-size: 32px;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+  color: @socialIconColor;
+  border: 2px solid @socialIconColor;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s;
+
+  &:before {
+    padding: 0.6rem;
+  }
+
+  &:hover {
+    background-color: @socialIconColor;
+    color: contrast(@socialIconColor);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .icons {
+    justify-content: center !important;
+  }
+
+  .text-content {
+
+    * {
+      text-align: center;
+    }
+  }
+}</style>
 </head>
 <body>
   
@@ -111,7 +194,7 @@ color: #ffa600;
     </div>
 </section>
 
-<section data-bs-version="5.1" class="header11 cid-uC6PNteBC2" id="header11-2q">
+<section data-bs-version="5.1" class="header11 cid-uC6PNteBC2 mbr-fullscreen" id="header11-2q">
 
     
 
@@ -127,26 +210,11 @@ color: #ffa600;
                 <div class="text-wrapper text-center">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>pknw1</strong><br><strong>personal &amp; professional</strong><br></h1>
                     
-                    
-
-                </div>
-  
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="contacts4 cid-uC8sO2MMEE" id="contacts4-2u">
-
-    
-
-    
-    
-
-    <div class="container">
+                    <div>
+                    <div class="container">
         <div class="row align-items-right justify-content-right">
 
-            <div style="padding-left:450px" classs="icons d-flex align-items-center col-12 col-md-8 justify-content-center mt-md-0 mt-2 flex-wrap" class="icons d-flex align-items-center col-12 col-md-14 justify-content-center mt-md-0 mt-2 flex-wrap">
+            <div style="" class="icons d-flex align-items-center col-12 col-md-14 justify-content-center mt-md-0 mt-2 flex-wrap">
                 <a href="https://www.pknw1.co.uk" target="_blank">
                     <span title="www.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-home mobi-mbri" style="color: rgb(255, 197, 35); fill: rgb(255, 197, 35);"></span>
                 </a>
@@ -180,30 +248,21 @@ color: #ffa600;
             </div>
         </div>
     </div>
-    
-</section>
-
-<section data-bs-version="5.1" class="content1 cid-tPXLW5Eo6q" id="content1-f">
-    
-    
-    <div class="container">
-        
-        <div class="row mt-4">
-            
-            <div class="item features-image сol-12 col-md-6 col-lg-3 active">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="assets/images/screenshot-2023-09-15-at-22.09.34-596x41.png" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
                     </div>
                     
-                    
+
                 </div>
+  
             </div>
-
-
         </div>
     </div>
 </section>
+
+
+
+
+
+
 
 <section data-bs-version="5.1" class="_anchor cid-EDy6JFd3Cj" id="pknw1">
 
@@ -277,7 +336,116 @@ color: #ffa600;
     </div>          
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-2p" data-rv-view="1256">
+<section class="mbr-section" id="witsec-modal-window-block-2x" data-rv-view="2213">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="links" tabindex="-1" role="dialog" aria-labelledby="linksLabel" aria-hidden="true">  <div class="modal-dialog  " style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="linksLabel">Modal title</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="links_body"><div class="container">
+        <div class="row align-items-right justify-content-right">
+
+            <div style="" class="icons d-flex align-items-center col-12 col-md-14 justify-content-center mt-md-0 mt-2 flex-wrap">
+                <a href="https://www.pknw1.co.uk" target="_blank">
+                    <span title="www.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-home mobi-mbri" style="color: rgb(255, 197, 35); fill: rgb(255, 197, 35);"></span>
+                </a>
+                <a href="javascript:OpenModal('help')">
+                    <span title="PKNW1 : Send me a nessage" class="mbr-iconfont mbr-iconfont-social mobi-mbri-paper-plane mobi-mbri"></span>
+                </a>
+                <a href="https://engineering.pknw1.co.uk">
+                    <span title="PKNW1 : engineering.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-rocket mobi-mbri"></span>
+                </a>
+                <a href="https://notflix.pknw1.co.uk" target="_blank">
+                    <span title="PKNW1 : notflix.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-video-play mobi-mbri"></span>
+                </a>
+                <a href="https://requests.pknw1.co.uk" target="_blank">
+                    <span title="PKNW1 : requests.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-search mobi-mbri"></span>
+                </a>
+                <a href="https://plex.pknw1.co.uk" target="_blank">
+                    <span title="PKNW1 : plex.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-video-play mobi-mbri"></span>
+                </a>
+                <a href="https://webmin.admin.pknw1.co.uk" target="_blank">
+                    <span title="PKNW1 : webmin.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-info mobi-mbri"></span>
+                </a>
+                <a href="https://admin.pknw1.co.uk" target="_blank">
+                    <span title="PKNW1 : admin.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social mobi-mbri-setting mobi-mbri"></span>
+                </a>
+                <a href="https://linkedin.com/in/pknw1" target="_blank">
+                    <span title="PKNW1 : linkedin.pknw1.co.uk" class="mbr-iconfont mbr-iconfont-social socicon-linkedin socicon"></span>
+                </a>
+                <a href="https://github.com/pknw1" target="_blank">
+                    <span title="PKNW1 : Github" class="mbr-iconfont mbr-iconfont-social mobi-mbri-github mobi-mbri"></span>
+                </a>
+            </div>
+        </div>
+    </div></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Close</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#links").on("hidden.bs.modal", function () { 
+      var html = $( "#links_body" ).html(); 
+      $( "#links_body" ).empty(); 
+      $( "#links_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#links") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-2p" data-rv-view="2214">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -350,7 +518,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-17" data-rv-view="1257">
+<section class="mbr-section" id="witsec-modal-window-block-17" data-rv-view="2215">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -496,7 +664,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	</script>
 
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/1542662" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/sociallikes/social-likes.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/1542662" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/no-code-website-builder.html">No Code Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/sociallikes/social-likes.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
 
 

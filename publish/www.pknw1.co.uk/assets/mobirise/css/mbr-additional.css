@@ -744,8 +744,6 @@ a {
   color: #232323;
 }
 .cid-uC6PNteBC2 {
-  padding-top: 4rem;
-  padding-bottom: 0rem;
   background-color: #232323;
 }
 .cid-uC6PNteBC2 .mbr-fallback-image.disabled {
@@ -1204,6 +1202,62 @@ a {
     justify-content: center !important;
   }
   .cid-uC8sO2MMEE .text-content * {
+    text-align: center;
+  }
+}
+.cid-uC8COhdrH9 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #232323;
+}
+.cid-uC8COhdrH9 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uC8COhdrH9 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uC8COhdrH9 .media-container-row {
+  justify-content: space-between;
+  justify-content: center;
+}
+.cid-uC8COhdrH9 .text-content {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .cid-uC8COhdrH9 .text-content {
+    max-width: none;
+  }
+}
+.cid-uC8COhdrH9 .mbr-iconfont-social {
+  margin: 0.5rem;
+  font-size: 32px;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffc523;
+  border: 2px solid #ffc523;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s;
+}
+.cid-uC8COhdrH9 .mbr-iconfont-social:before {
+  padding: 0.6rem;
+}
+.cid-uC8COhdrH9 .mbr-iconfont-social:hover {
+  background-color: #ffc523;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .cid-uC8COhdrH9 .icons {
+    justify-content: center !important;
+  }
+  .cid-uC8COhdrH9 .text-content * {
     text-align: center;
   }
 }
