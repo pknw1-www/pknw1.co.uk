@@ -23,8 +23,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build compose
         run: |
-          sed -i 's/REPO_NAME/${{ steps.repo-name.outputs.repository-name }}/g' docker-compose.yml
-          sed -i 's/-ENV/-prod/g' docker-compose.yml
           sed -i 's/display: flex/display: none/g' publish/*html
       - name: Build and push Docker images
         run: |
@@ -58,7 +56,7 @@ jobs:
           username:  ${{ secrets.TAILSCALE_SSH_USER }}
           key: ${{ secrets.TAILSCALE_SSH_KEY }}
           port: ${{ secrets.TAILSCALE_SSH_SERVER_PORT }}
-          script: cd cd ${{ secrets.DOCKER_ROOT }}/${{ steps.repo-name.outputs.repository-name }} && docker compose down && docker compose pull && docker compose up -d
+          script: cd ${{ secrets.DOCKER_ROOT }}/${{ steps.repo-name.outputs.repository-name }} && docker compose down && docker compose pull && docker compose up -d
       - name: executing remote ssh commands using password
         if: ${{ vars.DIRECTORY_OVERRIDE != '' }}
         uses: appleboy/ssh-action@v1.2.0
