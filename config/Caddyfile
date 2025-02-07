@@ -18,7 +18,7 @@ engineering.pknw1.co.uk:80 {
         file_server
 }
 
-mobile.enginerring.pknw1.co.uk:80 {
+mobile.engineering.pknw1.co.uk:80 {
         root * /publish/mobile.engineering.pknw1.co.uk
         file_server
 }
