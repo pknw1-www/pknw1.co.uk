@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build compose
         run: |
-          sed -i 's/display: flex/display: none/g' publish/*html
+          sed -i 's/display: flex/display: none/g' publish/*/*html
       - name: Build and push Docker images
         run: |
           TIMESTAMP=$(date +%s)
