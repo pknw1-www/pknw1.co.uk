@@ -1,4 +1,24 @@
-:80 {
-        root * /publish
+pknw1.co.uk:80 {
+        root * /publish/www.pknw1.co.uk
+        file_server
+}
+
+www.pknw1.co.uk:80 {
+        root * /publish/www.pknw1.co.uk
+        file_server
+}
+
+notflix.pknw1.co.uk:80 {
+        root * /publish/notflix.pknw1.co.uk
+        file_server
+}
+
+engineering.pknw1.co.uk:80 {
+        root * /publish/engineering.pknw1.co.uk
+        file_server
+}
+
+mobile.enginerring.pknw1.co.uk:80 {
+        root * /publish/mobile.engineering.pknw1.co.uk
         file_server
 }
