@@ -25,13 +25,15 @@ jobs:
           sed -i 's/REPO_NAME/${{ steps.repo-name.outputs.repository-name }}/g' docker-compose.yml
           sed -i 's/latest/dev/g' docker-compose.yml
           sed -i 's/-ENV/-dev/g' docker-compose.yml
+          sed -i 's/.pknw1.co.uk:80/-dev.pknw1.co.uk:80/g config/Caddyfile'
           sed -i 's/display: flex/display: none/g' publish/*html
       - name: Build and push Docker Dev
         run: |
           TIMESTAMP=$(date +%s)
-          echo ${TIMESTAMP} > publish/version.html
+          echo ${TIMESTAMP} > publish/www.pknw1.co.uk/version.html
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP} .
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev
           docker save --output="${{ steps.repo-name.outputs.repository-name }}.tar" ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev
       - uses: actions/upload-artifact@v4
         with:
