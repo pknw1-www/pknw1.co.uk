@@ -22,3 +22,8 @@ mobile.engineering.pknw1.co.uk:80 {
         root * /publish/mobile.engineering.pknw1.co.uk
         file_server
 }
+
+nav.pknw1.co.uk:80 {
+        root * /publish/nav.pknw1.co.uk
+        file_server
+}
