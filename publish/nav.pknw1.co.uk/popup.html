@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   
-  <title>Home</title>
+  <title>Popup</title>
   <link rel="stylesheet" href="assets/font-awesome-solid/../css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/font-awesome-solid/css/solid.min.css">
   <link rel="stylesheet" href="assets/dev-icons/css/devicon.min.css">
@@ -28,7 +28,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=yDXf8V"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=yDXf8V" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=V1t9DQ"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=V1t9DQ" type="text/css">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +61,7 @@ tr:nth-child(even) {
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="header1 cid-uC5pm22d0Z mbr-fullscreen" id="header01-f">
+  <section data-bs-version="5.1" class="header1 cid-uCrhU8W8Nb" id="header01-16">
 	
 
 	
@@ -70,7 +70,7 @@ tr:nth-child(even) {
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-12 col-lg-4 image-wrapper">
-				<img class="w-100" src="assets/images/ezgif-3-e3824c3d11.gif" alt="">
+				<img class="w-100" style="display:none" src="assets/images/pknw1logo-white-105x64.png" alt="">
 			</div>
 			<div class="col-12 col-lg col-md-12">
 				<div class="text-wrapper align-left">
@@ -87,7 +87,7 @@ tr:nth-child(even) {
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-7">
                                     </p><ul>
-                                    <li class="display-7"><a href="https://www.pknw1.co.uk" target="_new">www.pknw1.co.uk</a></li>
+                                    <li class="display-7"><a href="https://www.pknw1.co.uk" target="_top">www.pknw1.co.uk</a></li>
                                     <li class="display-7"><a href="https://contact.pknw1.co.uk" target="_new">contact.pknw1.co.uk</a></li>
                                     </ul>
                                 <p></p>
@@ -180,7 +180,80 @@ tr:nth-child(even) {
 	</div>
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-k" data-rv-view="1334">
+<section class="mbr-section" id="witsec-modal-window-block-1a" data-rv-view="1342">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupLabel" aria-hidden="true">  <div class="modal-dialog modal-lg " style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="popupLabel">Modal title</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="popup_body"><iframe allowfullscreen="yes" style="position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;" class="show" src="./popup.html"></iframe></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Close</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#popup").on("hidden.bs.modal", function () { 
+      var html = $( "#popup_body" ).html(); 
+      $( "#popup_body" ).empty(); 
+      $( "#popup_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#popup") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-17" data-rv-view="1343">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -282,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-u" data-rv-view="1335">
+<section class="mbr-section" id="witsec-modal-window-block-18" data-rv-view="1344">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -353,109 +426,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	</script>
 
-</section>
-
-<section data-bs-version="5.1" class="menu menu10 cid-jURMM42DhL" id="design-block-bkEsqgXbid">
-    
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="javascript:OpenModal('iFrame')">
-                        <img src="assets/images/pknw1logo-white.png" alt="" style="height: 3rem;">
-                    </a>
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-danger text-primary display-4" href="index.html#top">navigation</a></span>
-            </div>
-            
-            
-        </div>
-    </nav>
-
-
-    <script>
-
-/* force click
-  */
-  function MM_goToURL() { //v3.0
-  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-}
-    </script>
-</section>
-
-<section class="mbr-section" id="witsec-modal-window-block-1b" data-rv-view="1338">
-
-	<style>
-	/* Let's not animate the contents of modal windows */
-	.no-anim {
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
-	</style>
-
-	
-	
-	<div><div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupLabel" aria-hidden="true">  <div class="modal-dialog  " style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="popup_body"><iframe allowfullscreen="yes" style="position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;" class="show" src="./popup.html"></iframe></div>    </div>  </div></div><script> 
-document.addEventListener("DOMContentLoaded", function() { 
-  if(typeof jQuery === "function") {
-    $("#popup").on("hidden.bs.modal", function () { 
-      var html = $( "#popup_body" ).html(); 
-      $( "#popup_body" ).empty(); 
-      $( "#popup_body" ).append(html); 
-    }) 
-  } else { 
-      var mdw = document.getElementById("#popup") 
-      mdw.addEventListener("hidden.bs.modal", function(event) { 
-        mdw.innerHTML = mdw.innerHTML; 
-      }); 
-  } 
-}); 
-</script></div>
-
-	<script>
-	if (typeof OpenModal === 'undefined') {
-		OpenModal = function(modalName) {
-			if(typeof jQuery === "function") {
-				if ($('#' + modalName).length)
-					$('#' + modalName).modal('show');
-				else
-					alert("Sorry, but there is no modal for " + modalName);
-			} else {
-				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
-				mdw.show();
-			}
-		}
-	}
-
-	function modalSetCookie(cname, cvalue, exdays) {
-		var d = new Date();
-		d.setTime(d.getTime() + (exdays*24*60*60*1000));
-		var expires = "expires="+ d.toUTCString();
-		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-	}
-
-	function modalGetCookie(cname) {
-		var name = cname + "=";
-		var decodedCookie = decodeURIComponent(document.cookie);
-		var ca = decodedCookie.split(';');
-		for(var i = 0; i <ca.length; i++) {
-			var c = ca[i];
-			while (c.charAt(0) == ' ') {
-				c = c.substring(1);
-			}
-			if (c.indexOf(name) == 0) {
-				return c.substring(name.length, c.length);
-			}
-		}
-		return "";
-	}
-	</script>
-
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/1542662" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/html-builder.html">HTML Website Generator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/1542662" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com"> Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   <script type="text/javascript">
     const publishURL = `https://ntfy.sh/pknw1`;

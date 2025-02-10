@@ -57,7 +57,7 @@
     "dppsSwitcher": true,
     "spellingSwitch": true,
     "site_lang": "en",
-    "uniqCompNum": 120,
+    "uniqCompNum": 121,
     "versionPublish": "5.9.18",
     "imageResize": false,
     "screenshot": "screenshot.png",
@@ -1026,6 +1026,39 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "modalName": "nav",
+            "modalSize": "medium",
+            "modalHeader": false,
+            "modalTitle": "Modal title",
+            "modalBody": "Mo<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"://nav.pknw1.co.uk/popup.html\"></iframe>dal body text goes here.",
+            "modalBodyHTML": true,
+            "modalFooter": false,
+            "modalCloseBtn": true,
+            "modalCloseText": "Close",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": false,
+            "modalFade": true,
+            "modalAutoOpen": false,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": 0
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#nav\" data-bs-toggle=\"modal\" data-bs-target=\"#nav\">Preview nav</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#nav-howtouse\" data-bs-toggle=\"modal\" data-bs-target=\"#nav-howtouse\">How to use nav</a>\n</div>\n<div class=\"modal fade\" id=\"nav-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"nav-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title display-7\" id=\"nav-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body display-7\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('nav')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "Mo<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"://nav.pknw1.co.uk/popup.html\"></iframe>dal body text goes here.",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "witsec-modal-window-block-3c",
+          "modalWindow": "<div class=\"modal fade\" id=\"nav\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"navLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-body display-7\" id=\"nav_body\">Mo<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"://nav.pknw1.co.uk/popup.html\"></iframe>dal body text goes here.</div>    </div>  </div></div><script> \ndocument.addEventListener(\"DOMContentLoaded\", function() { \n  if(typeof jQuery === \"function\") {\n    $(\"#nav\").on(\"hidden.bs.modal\", function () { \n      var html = $( \"#nav_body\" ).html(); \n      $( \"#nav_body\" ).empty(); \n      $( \"#nav_body\" ).append(html); \n    }) \n  } else { \n      var mdw = document.getElementById(\"#nav\") \n      mdw.addEventListener(\"hidden.bs.modal\", function(event) { \n        mdw.innerHTML = mdw.innerHTML; \n      }); \n  } \n}); \n</script>"
         },
         {
           "_params": {
