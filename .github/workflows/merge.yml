@@ -27,7 +27,7 @@ jobs:
       - name: Build and push Docker images
         run: |
           TIMESTAMP=$(date +%s)
-          echo ${TIMESTAMP} > publish/version.html
+          echo ${TIMESTAMP} > publish/www.pknw1.co.uk/version.html
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP} .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP}
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:latest .

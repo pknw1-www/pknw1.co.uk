@@ -2,7 +2,7 @@ services:
   caddy-pknw1.co.uk:
     networks:
       - proxy
-    image: pknw1/pknw1.co.uk:latest
+    image: pknw1/pknw1.co:latest
     container_name: caddy-pknw1.co.uk
     hostname: caddy-pknw1.co.uk
     environment:

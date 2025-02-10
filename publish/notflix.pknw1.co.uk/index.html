@@ -23,7 +23,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=G5UvL4"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=G5UvL4" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=03xKAW"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=03xKAW" type="text/css">
 
   
   <style>.modal-content {
@@ -60,7 +60,7 @@ color: #ffa600;
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				
 				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-secondary display-4" href="https://nav.pknw1.co.uk">Navigation</a></div>
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-secondary display-4" href="javascript:OpenModal('nav')">Menu</a></div>
 			</div>
 		</div>
 	</nav>
@@ -126,7 +126,7 @@ color: #ffa600;
   </div>
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-y" data-rv-view="431">
+<section class="mbr-section" id="witsec-modal-window-block-y" data-rv-view="17">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -177,6 +177,79 @@ document.addEventListener("DOMContentLoaded", function() {
     }) 
   } else { 
       var mdw = document.getElementById("#help") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-1m" data-rv-view="18">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="nav" tabindex="-1" role="dialog" aria-labelledby="navLabel" aria-hidden="true">  <div class="modal-dialog  " style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="nav_body"><iframe allowfullscreen="yes" style="position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;" class="show" src="https://nav.pknw1.co.uk/popup.html"></iframe></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#nav").on("hidden.bs.modal", function () { 
+      var html = $( "#nav_body" ).html(); 
+      $( "#nav_body" ).empty(); 
+      $( "#nav_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#nav") 
       mdw.addEventListener("hidden.bs.modal", function(event) { 
         mdw.innerHTML = mdw.innerHTML; 
       }); 

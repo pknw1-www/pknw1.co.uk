@@ -25,19 +25,47 @@ jobs:
           sed -i 's/REPO_NAME/${{ steps.repo-name.outputs.repository-name }}/g' docker-compose.yml
           sed -i 's/latest/dev/g' docker-compose.yml
           sed -i 's/-ENV/-dev/g' docker-compose.yml
-          sed -i 's/display: flex/display: none/g' publish/*html
+          sed -i 's/.pknw1.co.uk:80/-dev.pknw1.co.uk:80/g' config/Caddyfile
+          sed -i 's/display: flex/display: none/g' publish/*/*html
+          sed -i 's/.pknw1.co.uk/-dev.pknw1.co.uk/g' publish/*/*html
+      - name: Summary - DEV variable replacements
+        run: echo '- [X] DEV Variable Replacements' >> $GITHUB_STEP_SUMMARY
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Summary - Login to Docker Hub
+        run: echo '- [X] Login to Docker Hub' >> $GITHUB_STEP_SUMMARY
+
       - name: Build and push Docker Dev
         run: |
           TIMESTAMP=$(date +%s)
-          echo ${TIMESTAMP} > publish/version.html
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP} .
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev .
-          docker save --output="${{ steps.repo-name.outputs.repository-name }}.tar" ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev
-      - uses: actions/upload-artifact@v4
+          echo ${TIMESTAMP} > publish/www.pknw1.co.uk/version.html
+          docker build -t ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP} .
+          docker build -t ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev .
+          docker push ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev
+      - name: Summary - Build Dev Container
+        run: echo '- [X] Build Dev Container' >> $GITHUB_STEP_SUMMARY
+      - name: Summary - Push Containers
+        run: echo '- [X] pushed :dev tag' >> $GITHUB_STEP_SUMMARY
+      - name: Tailscale
+        uses: tailscale/github-action@v3
         with:
-          name: docker-compose
-          path: docker-compose.yml
-      - uses: actions/upload-artifact@v4
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ovh
+      - name: Summary - Logion to TailNET
+        run: echo '- [X] logged into TailScale Network' >> $GITHUB_STEP_SUMMARY
+      - name: executing remote ssh commands using password
+        if: ${{ vars.DIRECTORY_OVERRIDE == '' }}
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          name: ${{ steps.repo-name.outputs.repository-name }}
-          path: ${{ steps.repo-name.outputs.repository-name }}.tar
+          host: ${{ secrets.TAILSCALE_SSH_SERVER }}
+          username:  ${{ secrets.TAILSCALE_SSH_USER }}
+          key: ${{ secrets.TAILSCALE_SSH_KEY }}
+          port: ${{ secrets.TAILSCALE_SSH_SERVER_PORT }}
+          script: cd ${{ secrets.DOCKER_ROOT }}/${{ steps.repo-name.outputs.repository-name }} && docker compose -f docker-compose-dev.yml down && docker compose -f docker-compose-dev.yml pull && docker compose -f docker-compose-dev.yml up -d
+      - name: Summary - Started DEV environments
+        run: echo '- [X] DEV environment https://www-dev.pknw1.co.uk ' >> $GITHUB_STEP_SUMMARY
