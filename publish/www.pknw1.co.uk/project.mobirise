@@ -62,7 +62,7 @@
     "imageResize": false,
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon-128x77.png",
-    "mbrsiteDomain": "t1slutpcpd",
+    "mbrsiteDomain": "8cnhewrlof",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -75,7 +75,7 @@
     "witsec-white-label": false,
     "publishChangesOnly": false,
     "global_footer_custom": "\n\n\n<script type=\"text/javascript\">\n  const publishURL = `https://ntfy.sh/pknw1`;\n  const subscribeURL = `https://ntfy.sh/pknw1/sse`;\n  const events = document.getElementById('events');\n  const eventSource = new EventSource(subscribeURL);\n\n  // Publish button\n  document.getElementById(\"publishButton\").onclick = () => {\nvar inputText = document.getElementById(\"inputText\").value;\n      var inputNumber = document.getElementById(\"inputNumber\").value;\n      var inputMessage = document.getElementById(\"inputMessage\").value;\n\n      fetch(publishURL, {\n          method: 'POST', // works with PUT as well, though that sends an OPTIONS request too!\n          body:`${new Date().toString()} `+inputText+` - `+inputNumber+` - `+inputMessage\n      })\n      document.getElementById(\"publishButton\").innerHTML = \"Message Sent!\";\n  };\n\n  // Incoming events\n  eventSource.onopen = () => {\n      let event = document.createElement('div');\n      event.innerHTML = `EventSource connected to ${subscribeURL}`;\n      events.appendChild(event);\n  };\n  eventSource.onerror = (e) => {\n      let event = document.createElement('div');\n      event.innerHTML = `EventSource error: Failed to connect to ${subscribeURL}`;\n      events.appendChild(event);\n  };\n  eventSource.onmessage = (e) => {\n      let event = document.createElement('div');\n      event.innerHTML = e.data;\n      events.appendChild(event);\n  };\n</script>",
-    "global_header_custom": "<style>.modal-content {\n  background-color: #232323 !important;\ncolor: #ffa600;\n}\n\n</style>"
+    "global_header_custom": "<style>.modal-content {\n  background-color: #232323 !important;\ncolor: #ffa600;\n}\n\nbody {\nbackground-color: #232323\n}\n\n</style>"
   },
   "pages": {
     "index.html": {
