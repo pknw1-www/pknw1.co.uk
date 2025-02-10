@@ -24,7 +24,6 @@ jobs:
       - name: Build compose
         run: |
           sed -i 's/display: flex/display: none/g' publish/*/*html
-          sed -i 's/.pknw1.co.uk/-dev.pknw1.co.uk/g' publish/*/*html
       - name: Build and push Docker images
         run: |
           TIMESTAMP=$(date +%s)
