@@ -1673,3 +1673,55 @@ a {
 .cid-uCrhUkiwSF .floatright {
   margin-right: auto !important;
 }
+.cid-uCrsHQX9Am {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #232323;
+}
+.cid-uCrsHQX9Am .justify-content-center {
+  align-items: center;
+}
+.cid-uCrsHQX9Am .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uCrsHQX9Am .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uCrsHQX9Am .item-wrapper {
+  display: flex;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .cid-uCrsHQX9Am .item-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uCrsHQX9Am .mbr-section-btn {
+  padding-left: 1.5rem;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .cid-uCrsHQX9Am .mbr-section-btn {
+    text-align: center;
+    padding-left: 0rem;
+  }
+}
+.cid-uCrsHQX9Am .row {
+  align-items: center;
+}
+.cid-uCrsHQX9Am .card-text {
+  color: #ffffff;
+  margin-bottom: 0px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .cid-uCrsHQX9Am .card-text {
+    text-align: center;
+  }
+}

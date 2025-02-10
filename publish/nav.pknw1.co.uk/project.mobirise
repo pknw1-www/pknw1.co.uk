@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "nav.pknw1.co.uk",
-    "currentPage": "index.html",
+    "currentPage": "popup.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -57,7 +57,7 @@
         "url": "https://fonts.googleapis.com/css?family=VT323:400"
       }
     ],
-    "uniqCompNum": 48,
+    "uniqCompNum": 49,
     "versionPublish": "5.9.18",
     "screenshot": "screenshot.png",
     "imageResize": true,
@@ -894,39 +894,6 @@
         },
         {
           "_params": {
-            "modalName": "popup",
-            "modalSize": "large",
-            "modalHeader": true,
-            "modalTitle": "Modal title",
-            "modalBody": "<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./popup.html\"></iframe>",
-            "modalBodyHTML": true,
-            "modalFooter": true,
-            "modalCloseBtn": true,
-            "modalCloseText": "Close",
-            "modalLink": false,
-            "modalLinkUrl": "https://mobirise.com/",
-            "modalLinkText": "Visit Mobirise",
-            "modalLinkNewWindow": true,
-            "modalVerticalCenter": false,
-            "modalFade": true,
-            "modalAutoOpen": false,
-            "modalAutoOpenOnce": true,
-            "modalAutoOpenGDPR": true,
-            "modalAutoOpenDelay": 0
-          },
-          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#popup\" data-bs-toggle=\"modal\" data-bs-target=\"#popup\">Preview popup</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#popup-howtouse\" data-bs-toggle=\"modal\" data-bs-target=\"#popup-howtouse\">How to use popup</a>\n</div>\n<div class=\"modal fade\" id=\"popup-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"popup-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title display-7\" id=\"popup-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body display-7\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('popup')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
-          "modalBody": "<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./popup.html\"></iframe>",
-          "alias": "witsec-modal-window",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "witsec-modal-window-block",
-          "_sourceTheme": "startm5",
-          "_anchor": "witsec-modal-window-block-1a",
-          "modalWindow": "<div class=\"modal fade\" id=\"popup\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"popupLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog modal-lg \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title display-7\" id=\"popupLabel\">Modal title</h5>  <a href=\"#\" class=\"no-anim close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body display-7\" id=\"popup_body\"><iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./popup.html\"></iframe></div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div></div>    </div>  </div></div><script> \ndocument.addEventListener(\"DOMContentLoaded\", function() { \n  if(typeof jQuery === \"function\") {\n    $(\"#popup\").on(\"hidden.bs.modal\", function () { \n      var html = $( \"#popup_body\" ).html(); \n      $( \"#popup_body\" ).empty(); \n      $( \"#popup_body\" ).append(html); \n    }) \n  } else { \n      var mdw = document.getElementById(\"#popup\") \n      mdw.addEventListener(\"hidden.bs.modal\", function(event) { \n        mdw.innerHTML = mdw.innerHTML; \n      }); \n  } \n}); \n</script>"
-        },
-        {
-          "_params": {
             "modalName": "ntfy",
             "modalSize": "medium",
             "modalHeader": true,
@@ -990,6 +957,39 @@
           "_sourceTheme": "startm5",
           "modalWindow": "<div class=\"modal fade\" id=\"iframe\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"iframeLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog modal-lg modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-body display-7\" id=\"iframe_body\"><iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./quicklinks.html\"></iframe></div>    </div>  </div></div><script> \ndocument.addEventListener(\"DOMContentLoaded\", function() { \n  if(typeof jQuery === \"function\") {\n    $(\"#iframe\").on(\"hidden.bs.modal\", function () { \n      var html = $( \"#iframe_body\" ).html(); \n      $( \"#iframe_body\" ).empty(); \n      $( \"#iframe_body\" ).append(html); \n    }) \n  } else { \n      var mdw = document.getElementById(\"#iframe\") \n      mdw.addEventListener(\"hidden.bs.modal\", function(event) { \n        mdw.innerHTML = mdw.innerHTML; \n      }); \n  } \n}); \n</script>",
           "_anchor": "witsec-modal-window-block-18"
+        },
+        {
+          "_params": {
+            "modalName": "popup",
+            "modalSize": "large",
+            "modalHeader": true,
+            "modalTitle": "Modal title",
+            "modalBody": "<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./popup.html\"></iframe>",
+            "modalBodyHTML": true,
+            "modalFooter": true,
+            "modalCloseBtn": true,
+            "modalCloseText": "Close",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": false,
+            "modalFade": true,
+            "modalAutoOpen": false,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": 0
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#popup\" data-bs-toggle=\"modal\" data-bs-target=\"#popup\">Preview popup</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#popup-howtouse\" data-bs-toggle=\"modal\" data-bs-target=\"#popup-howtouse\">How to use popup</a>\n</div>\n<div class=\"modal fade\" id=\"popup-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"popup-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title display-7\" id=\"popup-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body display-7\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('popup')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "<iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./popup.html\"></iframe>",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_sourceTheme": "startm5",
+          "_anchor": "witsec-modal-window-block-1a",
+          "modalWindow": "<div class=\"modal fade\" id=\"popup\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"popupLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog modal-lg \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title display-7\" id=\"popupLabel\">Modal title</h5>  <a href=\"#\" class=\"no-anim close\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body display-7\" id=\"popup_body\"><iframe allowfullscreen=\"yes\" style=\"position:absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0;\" class=\"show\" src=\"./popup.html\"></iframe></div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-bs-dismiss=\"modal\" data-dismiss=\"modal\">Close</a></div></div>    </div>  </div></div><script> \ndocument.addEventListener(\"DOMContentLoaded\", function() { \n  if(typeof jQuery === \"function\") {\n    $(\"#popup\").on(\"hidden.bs.modal\", function () { \n      var html = $( \"#popup_body\" ).html(); \n      $( \"#popup_body\" ).empty(); \n      $( \"#popup_body\" ).append(html); \n    }) \n  } else { \n      var mdw = document.getElementById(\"#popup\") \n      mdw.addEventListener(\"hidden.bs.modal\", function(event) { \n        mdw.innerHTML = mdw.innerHTML; \n      }); \n  } \n}); \n</script>"
         },
         {
           "alias": false,
@@ -1414,6 +1414,74 @@
           ],
           "_cid": "uCrhUkiwSF",
           "_anchor": "design-block-jURMM42DhL-19",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".justify-content-center": {
+              "align-items": "center"
+            },
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".item-wrapper": {
+              "display": "flex",
+              "margin-left": "auto",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".mbr-section-btn": {
+              "padding-left": "1.5rem",
+              "text-align": "right",
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "padding-left": "0rem"
+              }
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".card-text": {
+              "color": "#ffffff",
+              "margin-bottom": "0px",
+              "text-align": "left",
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_name": "features035",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features035\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-9 active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"card-box\">\n\t\t\t\t\t\t<h4 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">&nbsp;</h4>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-3 active\">\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "uCrsHQX9Am",
+          "_anchor": "features035-1c",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
