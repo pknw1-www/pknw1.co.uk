@@ -1,9 +1,15 @@
+
 pknw1.co.uk:80 {
-        root * /publish/www.pknw1.co.uk
+        root * /publish/new-nav
         file_server
 }
 
 www.pknw1.co.uk:80 {
+        root * /publish/new-nav
+        file_server
+}
+
+content.pknw1.co.uk:80 {
         root * /publish/www.pknw1.co.uk
         file_server
 }
