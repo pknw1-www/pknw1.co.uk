@@ -72,7 +72,7 @@
     "gdpr": false,
     "witsec-jquery": false,
     "witsec-white-label": false,
-    "global_header_custom": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=VT323&display=swap\" rel=\"stylesheet\">\n\n<style>.modal-content {\n  background-color: #232323 !important;\ncolor: #ffa600;\n}\n\nbody {\nbackground-color: #232323\n}\n</style>"
+    "global_header_custom": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=VT323&display=swap\" rel=\"stylesheet\">\n\n<style>.modal-content {\n  background-color: #232323 !important;\ncolor: #ffa600;\n}\n\nbody {\nbackground-color: #232323\n}\n\nsection {\nbackground-color: #232323 !important;\n}\n</style>"
   },
   "pages": {
     "index.html": {
