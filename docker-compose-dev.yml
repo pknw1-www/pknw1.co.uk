@@ -6,7 +6,7 @@ services:
     container_name: caddydev-dev.pknw1.co.uk
     hostname: caddydev-dev.pknw1.co.uk
     environment:
-      - VIRTUAL_HOST=dev.pknw1.co.uk,nav-dev.pknw1.co.uk,www-dev.pknw1.co.uk,engineering-dev.pknw1.co.uk,mobile.engineering-dev.pknw1.co.uk,contact-dev.pknw1.co.uk,projects-dev.pknw1.co.uk,career-dev.pknw1.co.uk,notflix-dev.pknw1.co.uk
+      - VIRTUAL_HOST=dev.pknw1.co.uk,nav-dev.pknw1.co.uk,content-dev.pknw1.co.uk,www-dev.pknw1.co.uk,engineering-dev.pknw1.co.uk,mobile.engineering-dev.pknw1.co.uk,contact-dev.pknw1.co.uk,projects-dev.pknw1.co.uk,career-dev.pknw1.co.uk,notflix-dev.pknw1.co.uk
       - VIRTUAL_PORT=80
 
 networks:

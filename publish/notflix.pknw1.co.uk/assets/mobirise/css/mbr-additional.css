@@ -855,6 +855,101 @@ a {
   background-color: #ffa600;
   color: #000000;
 }
+.cid-uC33hKSA1q .mbr-section-title {
+  color: #ffa600;
+}
+.cid-uCxoHggHo7 {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #232323;
+}
+.cid-uCxoHggHo7 .item-subtitle {
+  line-height: 1.2;
+  color: #000000;
+}
+.cid-uCxoHggHo7 img,
+.cid-uCxoHggHo7 .item-img {
+  width: 100%;
+}
+.cid-uCxoHggHo7 .item:focus,
+.cid-uCxoHggHo7 span:focus {
+  outline: none;
+}
+.cid-uCxoHggHo7 .item {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uCxoHggHo7 .item {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uCxoHggHo7 .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cid-uCxoHggHo7 .mbr-section-title {
+  color: #232323;
+}
+.cid-uCxoHggHo7 .mbr-text,
+.cid-uCxoHggHo7 .mbr-section-btn {
+  color: #232323;
+}
+.cid-uCxoHggHo7 .item-title {
+  color: #232323;
+  text-align: center;
+}
+.cid-uCxoHggHo7 .content-head {
+  max-width: 800px;
+}
+.cid-uCxsJI1rSe {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #232323;
+}
+.cid-uCxsJI1rSe .item-subtitle {
+  line-height: 1.2;
+  color: #000000;
+}
+.cid-uCxsJI1rSe img,
+.cid-uCxsJI1rSe .item-img {
+  width: 100%;
+}
+.cid-uCxsJI1rSe .item:focus,
+.cid-uCxsJI1rSe span:focus {
+  outline: none;
+}
+.cid-uCxsJI1rSe .item {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uCxsJI1rSe .item {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uCxsJI1rSe .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cid-uCxsJI1rSe .mbr-section-title {
+  color: #232323;
+}
+.cid-uCxsJI1rSe .mbr-text,
+.cid-uCxsJI1rSe .mbr-section-btn {
+  color: #232323;
+}
+.cid-uCxsJI1rSe .item-title {
+  color: #232323;
+  text-align: center;
+}
+.cid-uCxsJI1rSe .content-head {
+  max-width: 800px;
+}
 .cid-uC8OLxxtbx {
   background-image: url("../../../assets/images/netflix-wallpaper-1920x1080.jpg");
 }
