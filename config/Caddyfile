@@ -1,11 +1,11 @@
 
 pknw1.co.uk:80 {
-        root * /publish/new-nav
+        root * /publish
         file_server
 }
 
 www.pknw1.co.uk:80 {
-        root * /publish/new-nav
+        root * /publish
         file_server
 }
 
