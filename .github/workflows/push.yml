@@ -26,8 +26,8 @@ jobs:
           sed -i 's/latest/dev/g' docker-compose.yml
           sed -i 's/-ENV/-dev/g' docker-compose.yml
           sed -i 's/.pknw1.co.uk:80/-dev.pknw1.co.uk:80/g' config/Caddyfile
-          sed -i 's/display: flex/display: none/g' publish/*/*html
-          sed -i 's/.pknw1.co.uk/-dev.pknw1.co.uk/g' publish/*/*html
+          sed -i 's/display: flex/display: none/g' publish/*html
+          sed -i 's/.pknw1.co.uk/-dev.pknw1.co.uk/g' publish/*html
       - name: Summary - DEV variable replacements
         run: echo '- [X] DEV Variable Replacements' >> $GITHUB_STEP_SUMMARY
 
@@ -42,7 +42,7 @@ jobs:
       - name: Build and push Docker Dev
         run: |
           TIMESTAMP=$(date +%s)
-          echo ${TIMESTAMP} > publish/www.pknw1.co.uk/version.html
+          echo ${TIMESTAMP} > publish/version.html
           docker build -t ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP} .
           docker build -t ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev .
           docker push ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:dev
