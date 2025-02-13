@@ -1,1 +1,252 @@
-test
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive sidebar submenus</title>
+        <style>
+            .content {
+                margin-top: -50px;
+                overflow:hidden;
+            }
+
+            .header__img {
+                border-radius:0px;
+            }
+
+        </style>
+    </head>
+    <body style="overflow:hidden;">
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/pknw1logo-white.png" alt="" class="header__img">
+
+                <a href="#" class="header__logo">pknw1.co.uk</a>
+    
+            <!--    <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div> -->
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">pknw1.co.uk</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">    
+                            <a href="#" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name" onclick="menuSelect('home')" >Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class="fa-solid fa-school-circle-check"></i>&emsp;
+                                    <span class="nav__name"  > Career</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('recent')">Recent</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('timeline')">Timeline</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('downloadcv')">Download CV</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('linkedin')">LinkedIn</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class="fa-solid fa-wrench"></i>&emsp;
+                                    <span class="nav__name" > Engineering</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('projects')">Projects</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('github')">Github</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('gists')">Gists</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('dockerhub')">DockerHub</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class="fa-solid fa-diagram-project"></i>&emsp;
+                                    <span class="nav__name" > Projects</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('notflix')">Notflix</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('plex')">Plex</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('requests')">Requests</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('ytdl')">Youtube-DL</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <a href="#" class="nav__link">
+                                <i class="fa-regular fa-comment-dots"></i>&emsp;
+                                <span class="nav__name" onclick="menuSelect('contact')" > Contact</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Admin</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class="fa-solid fa-square-up-right"></i>&emsp;
+                                    <span class="nav__name"  > External</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('ovh')">OVH</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('externalstatus')">External Status</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('internalstatus')">Internal Status</a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class="fa-solid fa-ticket"></i>&emsp;
+                                    <span class="nav__name"  > Notflix</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('radarr')">Radarr</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('sonarr')">Sonarr</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('prowlarr')">Prowlarr</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('utorrent')">uTorrent</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('qbittorrent')">qBittorrent</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('metube')">Metube</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class="fa-solid fa-network-wired"></i>&emsp;
+                                    <span class="nav__name" onclick="menuSelect('about')" >Internal</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('admin')">Admin</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('webmin')">Webmin</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('portainer')">Portainer</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('proxymanager')">Proxymanager</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('pihole')">PiHole</a>
+                                        <a href="#" class="nav__dropdown-item" onclick="menuSelect('glances')">Glances</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                   <!--         <a href="#" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explore</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name">Saved</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+
+             <!--   <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a> -->
+            </nav>
+        </div>
+        <div style="width:100%; height: 92vh; overflow:hidden;">
+
+        <object type="text/html" id="content" data="https://content.pknw1.co.uk" style="width:100%;     height: 90vh;">
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+
+
+        </main>
+
+        <!--========== MAIN JS ==========-->
+<script>
+        function menuSelect(item) {
+            switch(item) {
+            case 'home': document.getElementById("content").data = './content.html'; break;
+            case 'contact': document.getElementById("content").data = './contact.html'; break;
+            case 'timeline': document.getElementById("content").data = './career.html'; break;
+            case 'recent': document.getElementById("content").data = './engineering.html'; break;
+            case 'projects': document.getElementById("content").data = './projects.html'; break;
+            case 'downloadcv': window.open("https://cv.pknw1.co.uk"); break;
+            case 'linkedin': window.open("https://linkedin.com/in/pknw1"); break;
+            case 'github': window.open("https://github.com/pknw1"); break;
+            case 'gists': window.open("https://gist.github.com/pknw1"); break;
+            case 'dockerhub': window.open("https://hub.docker.com/u/pknw1"); break;
+            case 'plex': window.open("https://app.plex.tv/desktop"); break;
+            case 'requests': window.open("https://requests.pknw1.co.uk"); break;
+            case 'ytdl': document.getElementById("content").data = './ytdl.html'; break;
+            case 'notflix': document.getElementById("content").data = 'https://./notflix.html'; break;
+            case 'ovh':  window.open("https://ovh.com"); break;
+            case 'externalstatus': document.getElementById("content").data = 'https://uptimerobot.com'; break;
+            case 'internalstatus': window.open("https://status.pknw1.co.uk/status/pknw1") ; break;
+            case 'sonarr': document.getElementById("content").data = 'https://sonarr.admin.pknw1.co.uk'; break;
+            case 'radarr': document.getElementById("content").data = 'https://radarr.admin.pknw1.co.uk'; break;
+            case 'prowlarr': document.getElementById("content").data = 'https://prowlarr.admin.pknw1.co.uk'; break;
+            case 'utorrent': document.getElementById("content").data = 'https://utorrent.admin.pknw1.co.uk'; break;
+            case 'qbittorrent': document.getElementById("content").data = 'https://qb.admin.pknw1.co.uk'; break;
+            case 'metube': document.getElementById("content").data = 'https://metube.admin.pknw1.co.uk'; break;
+            case 'admin': document.getElementById("content").data = 'https://admin.pknw1.co.uk'; break;
+            case 'webmin': window.open("https://webmin.admin.pknw1.co.uk"); break;
+            case 'portainer': document.getElementById("content").data = 'https://portainer.admin.pknw1.co.uk'; break;
+            case 'proxymanager': document.getElementById("content").data = 'https://proxymanager.admin.pknw1.co.uk'; break;
+            case 'pihole': window.open("https://pihole.admin.pknw1.co.uk/admin/login.php"); break;
+            case 'glances': window.open("https://glances.admin.pknw1.co.uk"); break;
+            default: document.getElementById("content").data = 'https://www.pknw1.co.uk';
+        } 
+        }
+        </script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
