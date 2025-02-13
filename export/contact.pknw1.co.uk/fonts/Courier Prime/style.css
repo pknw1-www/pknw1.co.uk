@@ -1,0 +1,28 @@
+@font-face {
+   font-family: 'Courier Prime';
+   font-style: normal;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///Users/pknw1/Documents/static/pknw1.co.uk/export/contact.pknw1.co.uk/fonts/Courier Prime/700.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Courier Prime';
+   font-style: regular;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///Users/pknw1/Documents/static/pknw1.co.uk/export/contact.pknw1.co.uk/fonts/Courier Prime/regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Courier Prime';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 400;
+   src: url('file:///Users/pknw1/Documents/static/pknw1.co.uk/export/contact.pknw1.co.uk/fonts/Courier Prime/italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Courier Prime';
+   font-style: italic;
+   font-display: swap;
+   font-weight: 700;
+   src: url('file:///Users/pknw1/Documents/static/pknw1.co.uk/export/contact.pknw1.co.uk/fonts/Courier Prime/700italic.ttf') format('truetype');
+}
