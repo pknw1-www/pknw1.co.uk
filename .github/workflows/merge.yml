@@ -23,11 +23,11 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build compose
         run: |
-          sed -i 's/display: flex/display: none/g' publish/*/*html
+          sed -i 's/display: flex/display: none/g' publish/*html
       - name: Build and push Docker images
         run: |
           TIMESTAMP=$(date +%s)
-          echo ${TIMESTAMP} > publish/www.pknw1.co.uk/version.html
+          echo ${TIMESTAMP} > publish/version.html
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP} .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:${TIMESTAMP}
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.repo-name.outputs.repository-name }}:latest .
