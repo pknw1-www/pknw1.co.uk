@@ -26,8 +26,8 @@ jobs:
           sed -i 's/latest/dev/g' docker-compose.yml
           sed -i 's/-ENV/-dev/g' docker-compose.yml
           sed -i 's/.pknw1.co.uk:80/-dev.pknw1.co.uk:80/g' config/Caddyfile
-          sed -i 's/display: flex/display: none/g' publish/*/*html
-          sed -i 's/.pknw1.co.uk/-dev.pknw1.co.uk/g' publish/*/*html
+          sed -i 's/display: flex/display: none/g' publish/*html
+          sed -i 's/.pknw1.co.uk/-dev.pknw1.co.uk/g' publish/*html
       - name: Summary - DEV variable replacements
         run: echo '- [X] DEV Variable Replacements' >> $GITHUB_STEP_SUMMARY
 
