@@ -9,7 +9,7 @@ on:
       - '!main'
 
 
-jobs:
+jobs: 
   docker_build:
     runs-on: ubuntu-latest
     steps:
