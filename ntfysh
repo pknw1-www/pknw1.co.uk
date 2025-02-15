@@ -1,0 +1,780 @@
+total 32
+-rw-r--r--   1 pknw1  wheel   95 15 Feb 07:12 Dockerfile
+-rw-r--r--   1 pknw1  wheel   35 15 Feb 07:13 README.md
+drwxr-xr-x   3 pknw1  wheel   96 15 Feb 07:12 config
+-rw-r--r--   1 pknw1  wheel  512 15 Feb 07:12 docker-compose-dev.yml
+-rw-r--r--   1 pknw1  wheel  478 15 Feb 07:12 docker-compose.yml
+drwxr-xr-x  12 pknw1  wheel  384 15 Feb 07:12 export
+-rw-r--r--   1 pknw1  wheel    0 15 Feb 07:25 ntfysh
+drwxr-xr-x  14 pknw1  wheel  448 15 Feb 07:12 publish
+
+./config:
+total 8
+-rw-r--r--  1 pknw1  wheel  897 15 Feb 07:12 Caddyfile
+
+./export:
+total 8
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 contact.pknw1.co.uk
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 engineering.pknw1.co.uk
+drwxr-xr-x  5 pknw1  wheel  160 15 Feb 07:12 howto.pknw1.co.uk
+-rw-r--r--  1 pknw1  wheel    4 15 Feb 07:12 index.html
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 mobile.engineering.pknw1.co.uk
+drwxr-xr-x  5 pknw1  wheel  160 15 Feb 07:12 nav.pknw1.co.uk
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 notflix.pknw1.co.uk
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 projects.pknw1.co.uk
+drwxr-xr-x  5 pknw1  wheel  160 15 Feb 07:12 republish
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 www.pknw1.co.uk
+
+./export/contact.pknw1.co.uk:
+total 272
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 assets
+drwxr-xr-x  4 pknw1  wheel     128 15 Feb 07:12 fonts
+drwxr-xr-x  5 pknw1  wheel     160 15 Feb 07:12 history
+-rw-r--r--  1 pknw1  wheel   13704 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  121809 15 Feb 07:12 screenshot.png
+
+./export/contact.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x  3 pknw1  wheel  96 15 Feb 07:12 images
+
+./export/contact.pknw1.co.uk/assets/images:
+total 8
+-rw-r--r--  1 pknw1  wheel  289 15 Feb 07:12 hashes.json
+
+./export/contact.pknw1.co.uk/fonts:
+total 0
+drwxr-xr-x   7 pknw1  wheel  224 15 Feb 07:12 Courier Prime
+drwxr-xr-x  21 pknw1  wheel  672 15 Feb 07:12 Inter Tight
+
+./export/contact.pknw1.co.uk/fonts/Courier Prime:
+total 592
+-rw-r--r--  1 pknw1  wheel  69944 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  77544 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  76656 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  68304 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   1030 15 Feb 07:12 style.css
+
+./export/contact.pknw1.co.uk/fonts/Inter Tight:
+total 11040
+-rw-r--r--  1 pknw1  wheel  305940 15 Feb 07:12 100.ttf
+-rw-r--r--  1 pknw1  wheel  312672 15 Feb 07:12 100italic.ttf
+-rw-r--r--  1 pknw1  wheel  306248 15 Feb 07:12 200.ttf
+-rw-r--r--  1 pknw1  wheel  313068 15 Feb 07:12 200italic.ttf
+-rw-r--r--  1 pknw1  wheel  305904 15 Feb 07:12 300.ttf
+-rw-r--r--  1 pknw1  wheel  312824 15 Feb 07:12 300italic.ttf
+-rw-r--r--  1 pknw1  wheel  308660 15 Feb 07:12 500.ttf
+-rw-r--r--  1 pknw1  wheel  315588 15 Feb 07:12 500italic.ttf
+-rw-r--r--  1 pknw1  wheel  309396 15 Feb 07:12 600.ttf
+-rw-r--r--  1 pknw1  wheel  316328 15 Feb 07:12 600italic.ttf
+-rw-r--r--  1 pknw1  wheel  310020 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  316844 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  311048 15 Feb 07:12 800.ttf
+-rw-r--r--  1 pknw1  wheel  317720 15 Feb 07:12 800italic.ttf
+-rw-r--r--  1 pknw1  wheel  310996 15 Feb 07:12 900.ttf
+-rw-r--r--  1 pknw1  wheel  317748 15 Feb 07:12 900italic.ttf
+-rw-r--r--  1 pknw1  wheel  312360 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  305472 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel    4556 15 Feb 07:12 style.css
+
+./export/contact.pknw1.co.uk/history:
+total 88
+-rw-r--r--  1 pknw1  wheel  13706 15 Feb 07:12 project-250213064328.mobirise_history
+-rw-r--r--  1 pknw1  wheel  12141 15 Feb 07:12 project-250213064332.mobirise_history
+-rw-r--r--  1 pknw1  wheel  13706 15 Feb 07:12 project-250213064848.mobirise_history
+
+./export/engineering.pknw1.co.uk:
+total 1840
+drwxr-xr-x   3 pknw1  wheel      96 15 Feb 07:12 assets
+drwxr-xr-x   4 pknw1  wheel     128 15 Feb 07:12 fonts
+drwxr-xr-x  14 pknw1  wheel     448 15 Feb 07:12 history
+-rw-r--r--   1 pknw1  wheel  531366 15 Feb 07:12 project.mobirise
+-rw-r--r--   1 pknw1  wheel  405637 15 Feb 07:12 screenshot.png
+
+./export/engineering.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x  35 pknw1  wheel  1120 15 Feb 07:12 images
+
+./export/engineering.pknw1.co.uk/assets/images:
+total 29592
+-rw-r--r--  1 pknw1  wheel      7028 15 Feb 07:12 04abd7-0ad2e48abb384df684177b657a749c93mv2-1305763187-611x314.png
+-rw-r--r--  1 pknw1  wheel    496589 15 Feb 07:12 1-oowsowheq5kyj4n0p2ptna-539335757-1920x1080.png
+-rw-r--r--  1 pknw1  wheel      3306 15 Feb 07:12 1200px-github-invertocat-logo.svg-160x160.png
+-rw-r--r--  1 pknw1  wheel     10099 15 Feb 07:12 1861140-182260680-577x189.png
+-rw-r--r--  1 pknw1  wheel      7157 15 Feb 07:12 202409171726568497667605-2149076165-577x185.png
+-rw-r--r--  1 pknw1  wheel      7627 15 Feb 07:12 a4027424a507e3389164b39d7d523ec7-1-816x131.png
+-rw-r--r--  1 pknw1  wheel      5610 15 Feb 07:12 bash-160x126.png
+-rw-r--r--  1 pknw1  wheel      7191 15 Feb 07:12 citibank-logo-review-featured-image-2113602345-816x458.png
+-rw-r--r--  1 pknw1  wheel     30571 15 Feb 07:12 d7a42681-047c-421a-b283-618114ad60e7-816x291.png
+-rw-r--r--  1 pknw1  wheel      7297 15 Feb 07:12 docker-logo-577x325.png
+-rw-r--r--  1 pknw1  wheel     28873 15 Feb 07:12 dvla-logo-removebg-preview-1535149883-811x308.png
+-rw-r--r--  1 pknw1  wheel  11235042 15 Feb 07:12 ezgif-2252a8e1dd0b4f.gif
+-rw-r--r--  1 pknw1  wheel   2982558 15 Feb 07:12 ezgif-3-e3824c3d11.gif
+-rw-r--r--  1 pknw1  wheel     10529 15 Feb 07:12 fico-logo-logotype-26504845-816x294.png
+-rw-r--r--  1 pknw1  wheel     12048 15 Feb 07:12 github-actions-577x294.jpg
+-rw-r--r--  1 pknw1  wheel      6462 15 Feb 07:12 github-actions-logo-031704bdc6-seeklogo.com-160x160.png
+-rw-r--r--  1 pknw1  wheel      2847 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel     10211 15 Feb 07:12 html5-logo-devextreme-multi-purpose-controls-html-javascript-3-1140205838-577x225.png
+-rw-r--r--  1 pknw1  wheel      5066 15 Feb 07:12 ibm-logo-01-1606984411-816x326.png
+-rw-r--r--  1 pknw1  wheel     57049 15 Feb 07:12 image1-2-3933926707-816x812.png
+-rw-r--r--  1 pknw1  wheel      6892 15 Feb 07:12 logo-ovh-us-horizontal-blue-577x165.png
+-rw-r--r--  1 pknw1  wheel       510 15 Feb 07:12 mbr-favicon.png
+-rw-r--r--  1 pknw1  wheel      7573 15 Feb 07:12 msrvnscu8tzalz3t7gkh1zpxbvk9-woe1bonxiryuz7ygzgvtyigswy-mm2r2a-dk5m-2872755582-512x250.png
+-rw-r--r--  1 pknw1  wheel      5272 15 Feb 07:12 pknw1logo-270x162-tr-270x162.png
+-rw-r--r--  1 pknw1  wheel      2086 15 Feb 07:12 rlogo.gif
+-rw-r--r--  1 pknw1  wheel     10467 15 Feb 07:12 santander-emblem-3203956038-816x459.png
+-rw-r--r--  1 pknw1  wheel     42657 15 Feb 07:12 screenshot-2023-09-16-at-00.04.52-816x381.png
+-rw-r--r--  1 pknw1  wheel      8188 15 Feb 07:12 smartfocus-logo-300x192.jpg
+-rw-r--r--  1 pknw1  wheel     10703 15 Feb 07:12 sony-pictures-logo.wine-2043150362b-816x544.png
+-rw-r--r--  1 pknw1  wheel     19686 15 Feb 07:12 terraform-azure-816x408.png
+-rw-r--r--  1 pknw1  wheel     11968 15 Feb 07:12 th-4080302868-474x243.jpg
+-rw-r--r--  1 pknw1  wheel      9629 15 Feb 07:12 uwe-logo-2388271289-632x248.png
+-rw-r--r--  1 pknw1  wheel     28240 15 Feb 07:12 vodafone-logo-2006-2017-2671885156-816x459.png
+
+./export/engineering.pknw1.co.uk/fonts:
+total 0
+drwxr-xr-x   7 pknw1  wheel  224 15 Feb 07:12 Courier Prime
+drwxr-xr-x  21 pknw1  wheel  672 15 Feb 07:12 Inter Tight
+
+./export/engineering.pknw1.co.uk/fonts/Courier Prime:
+total 592
+-rw-r--r--  1 pknw1  wheel  69944 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  77544 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  76656 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  68304 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   1046 15 Feb 07:12 style.css
+
+./export/engineering.pknw1.co.uk/fonts/Inter Tight:
+total 11040
+-rw-r--r--  1 pknw1  wheel  305940 15 Feb 07:12 100.ttf
+-rw-r--r--  1 pknw1  wheel  312672 15 Feb 07:12 100italic.ttf
+-rw-r--r--  1 pknw1  wheel  306248 15 Feb 07:12 200.ttf
+-rw-r--r--  1 pknw1  wheel  313068 15 Feb 07:12 200italic.ttf
+-rw-r--r--  1 pknw1  wheel  305904 15 Feb 07:12 300.ttf
+-rw-r--r--  1 pknw1  wheel  312824 15 Feb 07:12 300italic.ttf
+-rw-r--r--  1 pknw1  wheel  308660 15 Feb 07:12 500.ttf
+-rw-r--r--  1 pknw1  wheel  315588 15 Feb 07:12 500italic.ttf
+-rw-r--r--  1 pknw1  wheel  309396 15 Feb 07:12 600.ttf
+-rw-r--r--  1 pknw1  wheel  316328 15 Feb 07:12 600italic.ttf
+-rw-r--r--  1 pknw1  wheel  310020 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  316844 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  311048 15 Feb 07:12 800.ttf
+-rw-r--r--  1 pknw1  wheel  317720 15 Feb 07:12 800italic.ttf
+-rw-r--r--  1 pknw1  wheel  310996 15 Feb 07:12 900.ttf
+-rw-r--r--  1 pknw1  wheel  317748 15 Feb 07:12 900italic.ttf
+-rw-r--r--  1 pknw1  wheel  312360 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  305472 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel    4628 15 Feb 07:12 style.css
+
+./export/engineering.pknw1.co.uk/history:
+total 12384
+-rw-r--r--  1 pknw1  wheel  523520 15 Feb 07:12 project-250213073708.mobirise_history
+-rw-r--r--  1 pknw1  wheel  523228 15 Feb 07:12 project-250213080136.mobirise_history
+-rw-r--r--  1 pknw1  wheel  523122 15 Feb 07:12 project-250213081129.mobirise_history
+-rw-r--r--  1 pknw1  wheel  523122 15 Feb 07:12 project-250213081318.mobirise_history
+-rw-r--r--  1 pknw1  wheel  523122 15 Feb 07:12 project-250213081557.mobirise_history
+-rw-r--r--  1 pknw1  wheel  523122 15 Feb 07:12 project-250213081822.mobirise_history
+-rw-r--r--  1 pknw1  wheel  531573 15 Feb 07:12 project-250213082204.mobirise_history
+-rw-r--r--  1 pknw1  wheel  531463 15 Feb 07:12 project-250213082314.mobirise_history
+-rw-r--r--  1 pknw1  wheel  531366 15 Feb 07:12 project-250213083013.mobirise_history
+-rw-r--r--  1 pknw1  wheel  531366 15 Feb 07:12 project-250213083057.mobirise_history
+-rw-r--r--  1 pknw1  wheel  531366 15 Feb 07:12 project-250213083656.mobirise_history
+-rw-r--r--  1 pknw1  wheel  531366 15 Feb 07:12 project-250214035139.mobirise_history
+
+./export/howto.pknw1.co.uk:
+total 704
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 assets
+-rw-r--r--  1 pknw1  wheel  200325 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  158342 15 Feb 07:12 screenshot.png
+
+./export/howto.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x  6 pknw1  wheel  192 15 Feb 07:12 images
+
+./export/howto.pknw1.co.uk/assets/images:
+total 5616
+-rw-r--r--  1 pknw1  wheel  2837717 15 Feb 07:12 ezgif-2061298f6582c-optimised.gif
+-rw-r--r--  1 pknw1  wheel     1348 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel    26359 15 Feb 07:12 ovh-setup-copy-of-page-5-902x601.png
+-rw-r--r--  1 pknw1  wheel     2512 15 Feb 07:12 pknw1-logo-white-128x74.png
+
+./export/mobile.engineering.pknw1.co.uk:
+total 520
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 assets
+drwxr-xr-x  4 pknw1  wheel     128 15 Feb 07:12 fonts
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 history
+-rw-r--r--  1 pknw1  wheel   65914 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  193798 15 Feb 07:12 screenshot.png
+
+./export/mobile.engineering.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x  20 pknw1  wheel  640 15 Feb 07:12 images
+
+./export/mobile.engineering.pknw1.co.uk/assets/images:
+total 8328
+-rw-r--r--  1 pknw1  wheel    18276 15 Feb 07:12 04abd7-0ad2e48abb384df684177b657a749c93mv2-1305763187.png
+-rw-r--r--  1 pknw1  wheel     7267 15 Feb 07:12 a4027424a507e3389164b39d7d523ec7.png
+-rw-r--r--  1 pknw1  wheel    32465 15 Feb 07:12 citibank-logo-review-featured-image-2113602345.png
+-rw-r--r--  1 pknw1  wheel   119427 15 Feb 07:12 dvla-logo-removebg-preview-1535149883.png
+-rw-r--r--  1 pknw1  wheel  2982558 15 Feb 07:12 ezgif-3-e3824c3d11.gif
+-rw-r--r--  1 pknw1  wheel   179918 15 Feb 07:12 fico-logo-logotype-26504845.png
+-rw-r--r--  1 pknw1  wheel      890 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel   474616 15 Feb 07:12 image1-2.png
+-rw-r--r--  1 pknw1  wheel    15953 15 Feb 07:12 index-meta.png
+-rw-r--r--  1 pknw1  wheel      510 15 Feb 07:12 mbr-favicon.png
+-rw-r--r--  1 pknw1  wheel    15953 15 Feb 07:12 pknw1logo-white.png
+-rw-r--r--  1 pknw1  wheel     2086 15 Feb 07:12 rlogo.gif
+-rw-r--r--  1 pknw1  wheel    23497 15 Feb 07:12 santander-emblem-3203956038.png
+-rw-r--r--  1 pknw1  wheel     5760 15 Feb 07:12 smartfocus-logo-300x192.jpg
+-rw-r--r--  1 pknw1  wheel    69319 15 Feb 07:12 sony.png
+-rw-r--r--  1 pknw1  wheel     8255 15 Feb 07:12 th-4080302868.jpg
+-rw-r--r--  1 pknw1  wheel    15411 15 Feb 07:12 vbl.png
+-rw-r--r--  1 pknw1  wheel   259066 15 Feb 07:12 vodafone-logo-2006-2017.png
+
+./export/mobile.engineering.pknw1.co.uk/fonts:
+total 0
+drwxr-xr-x   7 pknw1  wheel  224 15 Feb 07:12 Courier Prime
+drwxr-xr-x  21 pknw1  wheel  672 15 Feb 07:12 Inter Tight
+
+./export/mobile.engineering.pknw1.co.uk/fonts/Courier Prime:
+total 592
+-rw-r--r--  1 pknw1  wheel  69944 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  77544 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  76656 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  68304 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   1074 15 Feb 07:12 style.css
+
+./export/mobile.engineering.pknw1.co.uk/fonts/Inter Tight:
+total 11040
+-rw-r--r--  1 pknw1  wheel  305940 15 Feb 07:12 100.ttf
+-rw-r--r--  1 pknw1  wheel  312672 15 Feb 07:12 100italic.ttf
+-rw-r--r--  1 pknw1  wheel  306248 15 Feb 07:12 200.ttf
+-rw-r--r--  1 pknw1  wheel  313068 15 Feb 07:12 200italic.ttf
+-rw-r--r--  1 pknw1  wheel  305904 15 Feb 07:12 300.ttf
+-rw-r--r--  1 pknw1  wheel  312824 15 Feb 07:12 300italic.ttf
+-rw-r--r--  1 pknw1  wheel  308660 15 Feb 07:12 500.ttf
+-rw-r--r--  1 pknw1  wheel  315588 15 Feb 07:12 500italic.ttf
+-rw-r--r--  1 pknw1  wheel  309396 15 Feb 07:12 600.ttf
+-rw-r--r--  1 pknw1  wheel  316328 15 Feb 07:12 600italic.ttf
+-rw-r--r--  1 pknw1  wheel  310020 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  316844 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  311048 15 Feb 07:12 800.ttf
+-rw-r--r--  1 pknw1  wheel  317720 15 Feb 07:12 800italic.ttf
+-rw-r--r--  1 pknw1  wheel  310996 15 Feb 07:12 900.ttf
+-rw-r--r--  1 pknw1  wheel  317748 15 Feb 07:12 900italic.ttf
+-rw-r--r--  1 pknw1  wheel  312360 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  305472 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel    4754 15 Feb 07:12 style.css
+
+./export/mobile.engineering.pknw1.co.uk/history:
+total 136
+-rw-r--r--  1 pknw1  wheel  65914 15 Feb 07:12 project-250213072713.mobirise_history
+
+./export/nav.pknw1.co.uk:
+total 600
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 assets
+-rw-r--r--  1 pknw1  wheel  144973 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  159533 15 Feb 07:12 screenshot.png
+
+./export/nav.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 images
+
+./export/nav.pknw1.co.uk/assets/images:
+total 5888
+-rw-r--r--  1 pknw1  wheel  2982558 15 Feb 07:12 ezgif-3-e3824c3d11.gif
+-rw-r--r--  1 pknw1  wheel      946 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel     3243 15 Feb 07:12 pknw1-icon-iphone-128x128.png
+-rw-r--r--  1 pknw1  wheel     2147 15 Feb 07:12 pknw1logo-white-105x64.png
+-rw-r--r--  1 pknw1  wheel    15953 15 Feb 07:12 pknw1logo-white.png
+
+./export/notflix.pknw1.co.uk:
+total 1368
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 assets
+drwxr-xr-x  4 pknw1  wheel     128 15 Feb 07:12 fonts
+drwxr-xr-x  8 pknw1  wheel     256 15 Feb 07:12 history
+-rw-r--r--  1 pknw1  wheel  126619 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  570558 15 Feb 07:12 screenshot.png
+
+./export/notflix.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x  15 pknw1  wheel  480 15 Feb 07:12 images
+
+./export/notflix.pknw1.co.uk/assets/images:
+total 864
+-rw-r--r--  1 pknw1  wheel    2922 15 Feb 07:12 1-400x400.png
+-rw-r--r--  1 pknw1  wheel    7903 15 Feb 07:12 2-400x400.png
+-rw-r--r--  1 pknw1  wheel    4407 15 Feb 07:12 3-400x400.png
+-rw-r--r--  1 pknw1  wheel    8801 15 Feb 07:12 4-400x400.png
+-rw-r--r--  1 pknw1  wheel    7468 15 Feb 07:12 5-400x400.png
+-rw-r--r--  1 pknw1  wheel    6273 15 Feb 07:12 6-400x400.png
+-rw-r--r--  1 pknw1  wheel    5977 15 Feb 07:12 7-400x400.png
+-rw-r--r--  1 pknw1  wheel    3886 15 Feb 07:12 8-400x400.png
+-rw-r--r--  1 pknw1  wheel     464 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel    1106 15 Feb 07:12 mbr-favicon.png
+-rw-r--r--  1 pknw1  wheel  351714 15 Feb 07:12 netflix-wallpaper-1920x1080.jpg
+-rw-r--r--  1 pknw1  wheel    5824 15 Feb 07:12 notflix-logo-bot-354x199.png
+-rw-r--r--  1 pknw1  wheel    9014 15 Feb 07:12 pknw1logo-white-284x172.png
+
+./export/notflix.pknw1.co.uk/fonts:
+total 0
+drwxr-xr-x   7 pknw1  wheel  224 15 Feb 07:12 Courier Prime
+drwxr-xr-x  21 pknw1  wheel  672 15 Feb 07:12 Inter Tight
+
+./export/notflix.pknw1.co.uk/fonts/Courier Prime:
+total 592
+-rw-r--r--  1 pknw1  wheel  69944 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  77544 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  76656 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  68304 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   1030 15 Feb 07:12 style.css
+
+./export/notflix.pknw1.co.uk/fonts/Inter Tight:
+total 11040
+-rw-r--r--  1 pknw1  wheel  305940 15 Feb 07:12 100.ttf
+-rw-r--r--  1 pknw1  wheel  312672 15 Feb 07:12 100italic.ttf
+-rw-r--r--  1 pknw1  wheel  306248 15 Feb 07:12 200.ttf
+-rw-r--r--  1 pknw1  wheel  313068 15 Feb 07:12 200italic.ttf
+-rw-r--r--  1 pknw1  wheel  305904 15 Feb 07:12 300.ttf
+-rw-r--r--  1 pknw1  wheel  312824 15 Feb 07:12 300italic.ttf
+-rw-r--r--  1 pknw1  wheel  308660 15 Feb 07:12 500.ttf
+-rw-r--r--  1 pknw1  wheel  315588 15 Feb 07:12 500italic.ttf
+-rw-r--r--  1 pknw1  wheel  309396 15 Feb 07:12 600.ttf
+-rw-r--r--  1 pknw1  wheel  316328 15 Feb 07:12 600italic.ttf
+-rw-r--r--  1 pknw1  wheel  310020 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  316844 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  311048 15 Feb 07:12 800.ttf
+-rw-r--r--  1 pknw1  wheel  317720 15 Feb 07:12 800italic.ttf
+-rw-r--r--  1 pknw1  wheel  310996 15 Feb 07:12 900.ttf
+-rw-r--r--  1 pknw1  wheel  317748 15 Feb 07:12 900italic.ttf
+-rw-r--r--  1 pknw1  wheel  312360 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  305472 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel    4556 15 Feb 07:12 style.css
+
+./export/notflix.pknw1.co.uk/history:
+total 1488
+-rw-r--r--  1 pknw1  wheel  126622 15 Feb 07:12 project-250213063515.mobirise_history
+-rw-r--r--  1 pknw1  wheel  126622 15 Feb 07:12 project-250213064012.mobirise_history
+-rw-r--r--  1 pknw1  wheel  126620 15 Feb 07:12 project-250213064125.mobirise_history
+-rw-r--r--  1 pknw1  wheel  126620 15 Feb 07:12 project-250213065221.mobirise_history
+-rw-r--r--  1 pknw1  wheel  126620 15 Feb 07:12 project-250213065346.mobirise_history
+-rw-r--r--  1 pknw1  wheel  126619 15 Feb 07:12 project-250213065757.mobirise_history
+
+./export/projects.pknw1.co.uk:
+total 616
+drwxr-xr-x   4 pknw1  wheel     128 15 Feb 07:12 assets
+drwxr-xr-x   4 pknw1  wheel     128 15 Feb 07:12 fonts
+drwxr-xr-x  12 pknw1  wheel     384 15 Feb 07:12 history
+-rw-r--r--   1 pknw1  wheel  180575 15 Feb 07:12 project.mobirise
+-rw-r--r--   1 pknw1  wheel  127316 15 Feb 07:12 screenshot.png
+
+./export/projects.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x   3 pknw1  wheel   96 15 Feb 07:12 files
+drwxr-xr-x  16 pknw1  wheel  512 15 Feb 07:12 images
+
+./export/projects.pknw1.co.uk/assets/files:
+total 3384
+-rw-r--r--  1 pknw1  wheel  1729267 15 Feb 07:12 PK-CVJUL20219pt3page090721.pdf
+
+./export/projects.pknw1.co.uk/assets/images:
+total 9032
+-rw-r--r--  1 pknw1  wheel    19685 15 Feb 07:12 1-ppgmuyqx6ydyqd425zp-vw-816x408.png
+-rw-r--r--  1 pknw1  wheel     7460 15 Feb 07:12 1200px-github-invertocat-logo.svg-376x376.png
+-rw-r--r--  1 pknw1  wheel    13024 15 Feb 07:12 bash-376x297.png
+-rw-r--r--  1 pknw1  wheel    30577 15 Feb 07:12 d7a42681-047c-421a-b283-618114ad60e7-816x291.png
+-rw-r--r--  1 pknw1  wheel  4431419 15 Feb 07:12 ezgif-297e0e3334d72f.gif
+-rw-r--r--  1 pknw1  wheel    12266 15 Feb 07:12 github-actions-logo-031704bdc6-seeklogo.com-300x300.png
+-rw-r--r--  1 pknw1  wheel     2225 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel     2907 15 Feb 07:12 icon-128x77.png
+-rw-r--r--  1 pknw1  wheel    18218 15 Feb 07:12 logo-website-gnome-web-wikipedia-376x376.png
+-rw-r--r--  1 pknw1  wheel     5590 15 Feb 07:12 manufacture-conveyor-belt-box-line-icon-manufacture-conveyor-belt-box-line-icon-linear-style-sign-mobile-concept-162917690.webp
+-rw-r--r--  1 pknw1  wheel     5510 15 Feb 07:12 preferencesplugin-94219-376x376.png
+-rw-r--r--  1 pknw1  wheel       98 15 Feb 07:12 screenshot-2023-09-15-at-22.09.34-596x41.png
+-rw-r--r--  1 pknw1  wheel    42657 15 Feb 07:12 screenshot-2023-09-16-at-00.04.52-816x381.png
+-rw-r--r--  1 pknw1  wheel     7720 15 Feb 07:12 terraform-1329545833434920700-376x376.png
+
+./export/projects.pknw1.co.uk/fonts:
+total 0
+drwxr-xr-x   7 pknw1  wheel  224 15 Feb 07:12 Courier Prime
+drwxr-xr-x  21 pknw1  wheel  672 15 Feb 07:12 Jost
+
+./export/projects.pknw1.co.uk/fonts/Courier Prime:
+total 592
+-rw-r--r--  1 pknw1  wheel  69944 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  77544 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  76656 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  68304 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   1034 15 Feb 07:12 style.css
+
+./export/projects.pknw1.co.uk/fonts/Jost:
+total 2392
+-rw-r--r--  1 pknw1  wheel  61584 15 Feb 07:12 100.ttf
+-rw-r--r--  1 pknw1  wheel  65724 15 Feb 07:12 100italic.ttf
+-rw-r--r--  1 pknw1  wheel  61688 15 Feb 07:12 200.ttf
+-rw-r--r--  1 pknw1  wheel  65932 15 Feb 07:12 200italic.ttf
+-rw-r--r--  1 pknw1  wheel  61624 15 Feb 07:12 300.ttf
+-rw-r--r--  1 pknw1  wheel  66100 15 Feb 07:12 300italic.ttf
+-rw-r--r--  1 pknw1  wheel  61652 15 Feb 07:12 500.ttf
+-rw-r--r--  1 pknw1  wheel  66160 15 Feb 07:12 500italic.ttf
+-rw-r--r--  1 pknw1  wheel  61648 15 Feb 07:12 600.ttf
+-rw-r--r--  1 pknw1  wheel  66148 15 Feb 07:12 600italic.ttf
+-rw-r--r--  1 pknw1  wheel  61612 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  66036 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  61712 15 Feb 07:12 800.ttf
+-rw-r--r--  1 pknw1  wheel  66116 15 Feb 07:12 800italic.ttf
+-rw-r--r--  1 pknw1  wheel  61692 15 Feb 07:12 900.ttf
+-rw-r--r--  1 pknw1  wheel  66120 15 Feb 07:12 900italic.ttf
+-rw-r--r--  1 pknw1  wheel  66064 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  61524 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   4322 15 Feb 07:12 style.css
+
+./export/projects.pknw1.co.uk/history:
+total 3560
+-rw-r--r--  1 pknw1  wheel  180742 15 Feb 07:12 project-250213064216.mobirise_history
+-rw-r--r--  1 pknw1  wheel  160845 15 Feb 07:12 project-250213064220.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180742 15 Feb 07:12 project-250213065847.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180742 15 Feb 07:12 project-250213065851.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180575 15 Feb 07:12 project-250213070749.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180575 15 Feb 07:12 project-250213070752.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180575 15 Feb 07:12 project-250213072113.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180575 15 Feb 07:12 project-250213072117.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180575 15 Feb 07:12 project-250213072302.mobirise_history
+-rw-r--r--  1 pknw1  wheel  180575 15 Feb 07:12 project-250213072308.mobirise_history
+
+./export/republish:
+total 784
+drwxr-xr-x  3 pknw1  wheel      96 15 Feb 07:12 assets
+-rw-r--r--  1 pknw1  wheel  256271 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  141152 15 Feb 07:12 screenshot.png
+
+./export/republish/assets:
+total 0
+drwxr-xr-x  36 pknw1  wheel  1152 15 Feb 07:12 images
+
+./export/republish/assets/images:
+total 50808
+-rw-r--r--  1 pknw1  wheel      7028 15 Feb 07:12 04abd7-0ad2e48abb384df684177b657a749c93mv2-1305763187-611x314.png
+-rw-r--r--  1 pknw1  wheel     18276 15 Feb 07:12 04abd7-0ad2e48abb384df684177b657a749c93mv2-1305763187.png
+-rw-r--r--  1 pknw1  wheel     19685 15 Feb 07:12 1-ppgmuyqx6ydyqd425zp-vw-816x408.png
+-rw-r--r--  1 pknw1  wheel      7460 15 Feb 07:12 1200px-github-invertocat-logo.svg-376x376.png
+-rw-r--r--  1 pknw1  wheel      7627 15 Feb 07:12 a4027424a507e3389164b39d7d523ec7-1-816x131.png
+-rw-r--r--  1 pknw1  wheel      7267 15 Feb 07:12 a4027424a507e3389164b39d7d523ec7.png
+-rw-r--r--  1 pknw1  wheel     13024 15 Feb 07:12 bash-376x297.png
+-rw-r--r--  1 pknw1  wheel     32465 15 Feb 07:12 citibank-logo-review-featured-image-2113602345.png
+-rw-r--r--  1 pknw1  wheel     30577 15 Feb 07:12 d7a42681-047c-421a-b283-618114ad60e7-816x291.png
+-rw-r--r--  1 pknw1  wheel    119427 15 Feb 07:12 dvla-logo-removebg-preview-1535149883.png
+-rw-r--r--  1 pknw1  wheel  11235042 15 Feb 07:12 ezgif-2252a8e1dd0b4f.gif
+-rw-r--r--  1 pknw1  wheel   4431419 15 Feb 07:12 ezgif-297e0e3334d72f.gif
+-rw-r--r--  1 pknw1  wheel   5965116 15 Feb 07:12 ezgif-3-e3824c3d11-1.gif
+-rw-r--r--  1 pknw1  wheel   2982558 15 Feb 07:12 ezgif-3-e3824c3d11.gif
+-rw-r--r--  1 pknw1  wheel    179918 15 Feb 07:12 fico-logo-logotype-26504845.png
+-rw-r--r--  1 pknw1  wheel     12266 15 Feb 07:12 github-actions-logo-031704bdc6-seeklogo.com-300x300.png
+-rw-r--r--  1 pknw1  wheel      1622 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel     57049 15 Feb 07:12 image1-2-3933926707-816x812.png
+-rw-r--r--  1 pknw1  wheel     18218 15 Feb 07:12 logo-website-gnome-web-wikipedia-376x376.png
+-rw-r--r--  1 pknw1  wheel      5590 15 Feb 07:12 manufacture-conveyor-belt-box-line-icon-manufacture-conveyor-belt-box-line-icon-linear-style-sign-mobile-concept-162917690.webp
+-rw-r--r--  1 pknw1  wheel      7573 15 Feb 07:12 msrvnscu8tzalz3t7gkh1zpxbvk9-woe1bonxiryuz7ygzgvtyigswy-mm2r2a-dk5m-2872755582-512x250.png
+-rw-r--r--  1 pknw1  wheel    351714 15 Feb 07:12 netflix-wallpaper-1920x1080.jpg
+-rw-r--r--  1 pknw1  wheel      5824 15 Feb 07:12 notflix-logo-bot-354x199.png
+-rw-r--r--  1 pknw1  wheel      3452 15 Feb 07:12 pknw1-logo-white.png
+-rw-r--r--  1 pknw1  wheel      5510 15 Feb 07:12 preferencesplugin-94219-376x376.png
+-rw-r--r--  1 pknw1  wheel      2086 15 Feb 07:12 rlogo.gif
+-rw-r--r--  1 pknw1  wheel     23497 15 Feb 07:12 santander-emblem-3203956038.png
+-rw-r--r--  1 pknw1  wheel     42657 15 Feb 07:12 screenshot-2023-09-16-at-00.04.52-816x381.png
+-rw-r--r--  1 pknw1  wheel      8188 15 Feb 07:12 smartfocus-logo-300x192.jpg
+-rw-r--r--  1 pknw1  wheel     69319 15 Feb 07:12 sony.png
+-rw-r--r--  1 pknw1  wheel      7720 15 Feb 07:12 terraform-1329545833434920700-376x376.png
+-rw-r--r--  1 pknw1  wheel      8255 15 Feb 07:12 th-4080302868.jpg
+-rw-r--r--  1 pknw1  wheel     15411 15 Feb 07:12 vbl.png
+-rw-r--r--  1 pknw1  wheel    259066 15 Feb 07:12 vodafone-logo-2006-2017.png
+
+./export/www.pknw1.co.uk:
+total 888
+drwxr-xr-x  4 pknw1  wheel     128 15 Feb 07:12 assets
+drwxr-xr-x  4 pknw1  wheel     128 15 Feb 07:12 fonts
+drwxr-xr-x  4 pknw1  wheel     128 15 Feb 07:12 history
+-rw-r--r--  1 pknw1  wheel  287678 15 Feb 07:12 project.mobirise
+-rw-r--r--  1 pknw1  wheel  160153 15 Feb 07:12 screenshot.png
+
+./export/www.pknw1.co.uk/assets:
+total 0
+drwxr-xr-x   3 pknw1  wheel   96 15 Feb 07:12 files
+drwxr-xr-x  20 pknw1  wheel  640 15 Feb 07:12 images
+
+./export/www.pknw1.co.uk/assets/files:
+total 3384
+-rw-r--r--  1 pknw1  wheel  1729267 15 Feb 07:12 PK-CVJUL20219pt3page090721.pdf
+
+./export/www.pknw1.co.uk/assets/images:
+total 20488
+-rw-r--r--  1 pknw1  wheel    19685 15 Feb 07:12 1-ppgmuyqx6ydyqd425zp-vw-816x408.png
+-rw-r--r--  1 pknw1  wheel     7460 15 Feb 07:12 1200px-github-invertocat-logo.svg-376x376.png
+-rw-r--r--  1 pknw1  wheel    13024 15 Feb 07:12 bash-376x297.png
+-rw-r--r--  1 pknw1  wheel  1305550 15 Feb 07:12 ben-redblock-loading.gif
+-rw-r--r--  1 pknw1  wheel    30577 15 Feb 07:12 d7a42681-047c-421a-b283-618114ad60e7-816x291.png
+-rw-r--r--  1 pknw1  wheel  5965116 15 Feb 07:12 ezgif-3-e3824c3d11-1.gif
+-rw-r--r--  1 pknw1  wheel  2982558 15 Feb 07:12 ezgif-3-e3824c3d11.gif
+-rw-r--r--  1 pknw1  wheel    12266 15 Feb 07:12 github-actions-logo-031704bdc6-seeklogo.com-300x300.png
+-rw-r--r--  1 pknw1  wheel     2908 15 Feb 07:12 hashes.json
+-rw-r--r--  1 pknw1  wheel     2907 15 Feb 07:12 icon-128x77.png
+-rw-r--r--  1 pknw1  wheel    18218 15 Feb 07:12 logo-website-gnome-web-wikipedia-376x376.png
+-rw-r--r--  1 pknw1  wheel     5590 15 Feb 07:12 manufacture-conveyor-belt-box-line-icon-manufacture-conveyor-belt-box-line-icon-linear-style-sign-mobile-concept-162917690.webp
+-rw-r--r--  1 pknw1  wheel     5272 15 Feb 07:12 pknw1logo-270x162-tr-270x162.png
+-rw-r--r--  1 pknw1  wheel     5510 15 Feb 07:12 preferencesplugin-94219-376x376.png
+-rw-r--r--  1 pknw1  wheel       98 15 Feb 07:12 screenshot-2023-09-15-at-22.09.34-596x41.png
+-rw-r--r--  1 pknw1  wheel    42657 15 Feb 07:12 screenshot-2023-09-16-at-00.04.52-816x381.png
+-rw-r--r--  1 pknw1  wheel     7720 15 Feb 07:12 terraform-1329545833434920700-376x376.png
+-rw-r--r--  1 pknw1  wheel    28199 15 Feb 07:12 video-placeholder.jpg
+
+./export/www.pknw1.co.uk/fonts:
+total 0
+drwxr-xr-x   7 pknw1  wheel  224 15 Feb 07:12 Courier Prime
+drwxr-xr-x  21 pknw1  wheel  672 15 Feb 07:12 Jost
+
+./export/www.pknw1.co.uk/fonts/Courier Prime:
+total 592
+-rw-r--r--  1 pknw1  wheel  69944 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  77544 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  76656 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  68304 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   1014 15 Feb 07:12 style.css
+
+./export/www.pknw1.co.uk/fonts/Jost:
+total 2392
+-rw-r--r--  1 pknw1  wheel  61584 15 Feb 07:12 100.ttf
+-rw-r--r--  1 pknw1  wheel  65724 15 Feb 07:12 100italic.ttf
+-rw-r--r--  1 pknw1  wheel  61688 15 Feb 07:12 200.ttf
+-rw-r--r--  1 pknw1  wheel  65932 15 Feb 07:12 200italic.ttf
+-rw-r--r--  1 pknw1  wheel  61624 15 Feb 07:12 300.ttf
+-rw-r--r--  1 pknw1  wheel  66100 15 Feb 07:12 300italic.ttf
+-rw-r--r--  1 pknw1  wheel  61652 15 Feb 07:12 500.ttf
+-rw-r--r--  1 pknw1  wheel  66160 15 Feb 07:12 500italic.ttf
+-rw-r--r--  1 pknw1  wheel  61648 15 Feb 07:12 600.ttf
+-rw-r--r--  1 pknw1  wheel  66148 15 Feb 07:12 600italic.ttf
+-rw-r--r--  1 pknw1  wheel  61612 15 Feb 07:12 700.ttf
+-rw-r--r--  1 pknw1  wheel  66036 15 Feb 07:12 700italic.ttf
+-rw-r--r--  1 pknw1  wheel  61712 15 Feb 07:12 800.ttf
+-rw-r--r--  1 pknw1  wheel  66116 15 Feb 07:12 800italic.ttf
+-rw-r--r--  1 pknw1  wheel  61692 15 Feb 07:12 900.ttf
+-rw-r--r--  1 pknw1  wheel  66120 15 Feb 07:12 900italic.ttf
+-rw-r--r--  1 pknw1  wheel  66064 15 Feb 07:12 italic.ttf
+-rw-r--r--  1 pknw1  wheel  61524 15 Feb 07:12 regular.ttf
+-rw-r--r--  1 pknw1  wheel   4232 15 Feb 07:12 style.css
+
+./export/www.pknw1.co.uk/history:
+total 1080
+-rw-r--r--  1 pknw1  wheel  287678 15 Feb 07:12 project-250213075712.mobirise_history
+-rw-r--r--  1 pknw1  wheel  259744 15 Feb 07:12 project-250213075720.mobirise_history
+
+./publish:
+total 752
+drwxr-xr-x  18 pknw1  wheel     576 15 Feb 07:12 assets
+-rwxr-xr-x   1 pknw1  wheel   19912 15 Feb 07:12 career.html
+-rwxr-xr-x   1 pknw1  wheel    6236 15 Feb 07:12 contact.html
+-rwxr-xr-x   1 pknw1  wheel    4307 15 Feb 07:12 content.html
+-rwxr-xr-x   1 pknw1  wheel   20891 15 Feb 07:12 engineering.html
+-rwxr-xr-x   1 pknw1  wheel   14423 15 Feb 07:12 index.html
+-rwxr-xr-x   1 pknw1  wheel    3227 15 Feb 07:12 index2.html
+-rwxr-xr-x   1 pknw1  wheel    7945 15 Feb 07:12 notflix.html
+-rwxr-xr-x   1 pknw1  wheel  256271 15 Feb 07:12 project.mobirise
+-rwxr-xr-x   1 pknw1  wheel   30628 15 Feb 07:12 projects.html
+-rwxr-xr-x   1 pknw1  wheel    3555 15 Feb 07:12 ytdl.html
+
+./publish/assets:
+total 0
+drwxr-xr-x   4 pknw1  wheel   128 15 Feb 07:12 bootstrap
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 css
+drwxr-xr-x   5 pknw1  wheel   160 15 Feb 07:12 gallery
+drwxr-xr-x  42 pknw1  wheel  1344 15 Feb 07:12 images
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 imagesloaded
+drwxr-xr-x  10 pknw1  wheel   320 15 Feb 07:12 img
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 js
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 masonry
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 mobirise
+drwxr-xr-x   4 pknw1  wheel   128 15 Feb 07:12 parallax
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 scss
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 smoothscroll
+drwxr-xr-x   4 pknw1  wheel   128 15 Feb 07:12 socicon
+drwxr-xr-x   4 pknw1  wheel   128 15 Feb 07:12 theme
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 web
+drwxr-xr-x   3 pknw1  wheel    96 15 Feb 07:12 ytplayer
+
+./publish/assets/bootstrap:
+total 0
+drwxr-xr-x  5 pknw1  wheel  160 15 Feb 07:12 css
+drwxr-xr-x  3 pknw1  wheel   96 15 Feb 07:12 js
+
+./publish/assets/bootstrap/css:
+total 424
+-rwxr-xr-x  1 pknw1  wheel   51457 15 Feb 07:12 bootstrap-grid.min.css
+-rwxr-xr-x  1 pknw1  wheel    4623 15 Feb 07:12 bootstrap-reboot.min.css
+-rwxr-xr-x  1 pknw1  wheel  155590 15 Feb 07:12 bootstrap.min.css
+
+./publish/assets/bootstrap/js:
+total 160
+-rwxr-xr-x  1 pknw1  wheel  78704 15 Feb 07:12 bootstrap.bundle.min.js
+
+./publish/assets/css:
+total 16
+-rwxr-xr-x  1 pknw1  wheel  5701 15 Feb 07:12 styles.css
+
+./publish/assets/gallery:
+total 88
+-rwxr-xr-x  1 pknw1  wheel  19755 15 Feb 07:12 player.min.js
+-rwxr-xr-x  1 pknw1  wheel  10689 15 Feb 07:12 script.js
+-rwxr-xr-x  1 pknw1  wheel  10116 15 Feb 07:12 style.css
+
+./publish/assets/images:
+total 70208
+-rwxr-xr-x  1 pknw1  wheel      7028 15 Feb 07:12 04abd7-0ad2e48abb384df684177b657a749c93mv2-1305763187-611x314.png
+-rwxr-xr-x  1 pknw1  wheel     18276 15 Feb 07:12 04abd7-0ad2e48abb384df684177b657a749c93mv2-1305763187.png
+-rwxr-xr-x  1 pknw1  wheel     19685 15 Feb 07:12 1-ppgmuyqx6ydyqd425zp-vw-816x408.png
+-rwxr-xr-x  1 pknw1  wheel      7460 15 Feb 07:12 1200px-github-invertocat-logo.svg-376x376.png
+-rwxr-xr-x  1 pknw1  wheel      7627 15 Feb 07:12 a4027424a507e3389164b39d7d523ec7-1-816x131.png
+-rwxr-xr-x  1 pknw1  wheel      7267 15 Feb 07:12 a4027424a507e3389164b39d7d523ec7.png
+-rwxr-xr-x  1 pknw1  wheel     13024 15 Feb 07:12 bash-376x297.png
+-rwxr-xr-x  1 pknw1  wheel     32465 15 Feb 07:12 citibank-logo-review-featured-image-2113602345.png
+-rwxr-xr-x  1 pknw1  wheel     30577 15 Feb 07:12 d7a42681-047c-421a-b283-618114ad60e7-816x291.png
+-rwxr-xr-x  1 pknw1  wheel    119427 15 Feb 07:12 dvla-logo-removebg-preview-1535149883.png
+-rw-r--r--  1 pknw1  wheel   8813164 15 Feb 07:12 ea-explainer.gif
+-rw-r--r--  1 pknw1  wheel    113764 15 Feb 07:12 ea-hld.png
+-rw-r--r--  1 pknw1  wheel     97314 15 Feb 07:12 ea1.jpg
+-rwxr-xr-x  1 pknw1  wheel  11235042 15 Feb 07:12 ezgif-2252a8e1dd0b4f.gif
+-rwxr-xr-x  1 pknw1  wheel   4431419 15 Feb 07:12 ezgif-297e0e3334d72f.gif
+-rwxr-xr-x  1 pknw1  wheel   5965116 15 Feb 07:12 ezgif-3-e3824c3d11-1.gif
+-rwxr-xr-x  1 pknw1  wheel   2982558 15 Feb 07:12 ezgif-3-e3824c3d11.gif
+-rwxr-xr-x  1 pknw1  wheel    179918 15 Feb 07:12 fico-logo-logotype-26504845.png
+-rwxr-xr-x  1 pknw1  wheel     12266 15 Feb 07:12 github-actions-logo-031704bdc6-seeklogo.com-300x300.png
+-rwxr-xr-x  1 pknw1  wheel      1622 15 Feb 07:12 hashes.json
+-rwxr-xr-x  1 pknw1  wheel     57049 15 Feb 07:12 image1-2-3933926707-816x812.png
+-rwxr-xr-x  1 pknw1  wheel     18218 15 Feb 07:12 logo-website-gnome-web-wikipedia-376x376.png
+-rwxr-xr-x  1 pknw1  wheel      3297 15 Feb 07:12 logo5.png
+-rwxr-xr-x  1 pknw1  wheel      5590 15 Feb 07:12 manufacture-conveyor-belt-box-line-icon-manufacture-conveyor-belt-box-line-icon-linear-style-sign-mobile-concept-162917690.webp
+-rwxr-xr-x  1 pknw1  wheel      7573 15 Feb 07:12 msrvnscu8tzalz3t7gkh1zpxbvk9-woe1bonxiryuz7ygzgvtyigswy-mm2r2a-dk5m-2872755582-512x250.png
+-rwxr-xr-x  1 pknw1  wheel    351714 15 Feb 07:12 netflix-wallpaper-1920x1080.jpg
+-rwxr-xr-x  1 pknw1  wheel      5824 15 Feb 07:12 notflix-logo-bot-354x199.png
+-rw-r--r--  1 pknw1  wheel      3452 15 Feb 07:12 pknw1-logo-white.png
+-rwxr-xr-x  1 pknw1  wheel      5510 15 Feb 07:12 preferencesplugin-94219-376x376.png
+-rwxr-xr-x  1 pknw1  wheel      2086 15 Feb 07:12 rlogo.gif
+-rwxr-xr-x  1 pknw1  wheel     23497 15 Feb 07:12 santander-emblem-3203956038.png
+-rwxr-xr-x  1 pknw1  wheel     42657 15 Feb 07:12 screenshot-2023-09-16-at-00.04.52-816x381.png
+-rwxr-xr-x  1 pknw1  wheel      8188 15 Feb 07:12 smartfocus-logo-300x192.jpg
+-rwxr-xr-x  1 pknw1  wheel     69319 15 Feb 07:12 sony.png
+-rwxr-xr-x  1 pknw1  wheel      7720 15 Feb 07:12 terraform-1329545833434920700-376x376.png
+-rwxr-xr-x  1 pknw1  wheel      8255 15 Feb 07:12 th-4080302868.jpg
+-rwxr-xr-x  1 pknw1  wheel     15411 15 Feb 07:12 vbl.png
+-rwxr-xr-x  1 pknw1  wheel    259066 15 Feb 07:12 vodafone-logo-2006-2017.png
+-rw-r--r--  1 pknw1  wheel    141535 15 Feb 07:12 webui.jpg
+-rw-r--r--  1 pknw1  wheel    755028 15 Feb 07:12 webui.png
+
+./publish/assets/imagesloaded:
+total 16
+-rwxr-xr-x  1 pknw1  wheel  5600 15 Feb 07:12 imagesloaded.pkgd.min.js
+
+./publish/assets/img:
+total 28088
+-rw-r--r--  1 pknw1  wheel  8813164 15 Feb 07:12 ea-explainer.gif
+-rw-r--r--  1 pknw1  wheel   113764 15 Feb 07:12 ea-hld.png
+-rw-r--r--  1 pknw1  wheel    97314 15 Feb 07:12 ea1.jpg
+-rw-r--r--  1 pknw1  wheel  4431419 15 Feb 07:12 ezgif-297e0e3334d72f.gif
+-rwxr-xr-x  1 pknw1  wheel     2289 15 Feb 07:12 perfil.jpg
+-rwxr-xr-x  1 pknw1  wheel    15953 15 Feb 07:12 pknw1logo-white.png
+-rw-r--r--  1 pknw1  wheel   141535 15 Feb 07:12 webui.jpg
+-rw-r--r--  1 pknw1  wheel   755028 15 Feb 07:12 webui.png
+
+./publish/assets/js:
+total 8
+-rwxr-xr-x  1 pknw1  wheel  913 15 Feb 07:12 main.js
+
+./publish/assets/masonry:
+total 48
+-rwxr-xr-x  1 pknw1  wheel  24111 15 Feb 07:12 masonry.pkgd.min.js
+
+./publish/assets/mobirise:
+total 0
+drwxr-xr-x  3 pknw1  wheel  96 15 Feb 07:12 css
+
+./publish/assets/mobirise/css:
+total 96
+-rwxr-xr-x  1 pknw1  wheel  46619 15 Feb 07:12 mbr-additional.css
+
+./publish/assets/parallax:
+total 48
+-rwxr-xr-x  1 pknw1  wheel    335 15 Feb 07:12 jarallax.css
+-rwxr-xr-x  1 pknw1  wheel  19151 15 Feb 07:12 jarallax.js
+
+./publish/assets/scss:
+total 16
+-rwxr-xr-x  1 pknw1  wheel  6859 15 Feb 07:12 styles.scss
+
+./publish/assets/smoothscroll:
+total 16
+-rwxr-xr-x  1 pknw1  wheel  7548 15 Feb 07:12 smooth-scroll.js
+
+./publish/assets/socicon:
+total 0
+drwxr-xr-x  3 pknw1  wheel   96 15 Feb 07:12 css
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 fonts
+
+./publish/assets/socicon/css:
+total 40
+-rwxr-xr-x  1 pknw1  wheel  16463 15 Feb 07:12 styles.css
+
+./publish/assets/socicon/fonts:
+total 1456
+-rwxr-xr-x  1 pknw1  wheel  116280 15 Feb 07:12 socicon.eot
+-rwxr-xr-x  1 pknw1  wheel  322763 15 Feb 07:12 socicon.svg
+-rwxr-xr-x  1 pknw1  wheel  116116 15 Feb 07:12 socicon.ttf
+-rwxr-xr-x  1 pknw1  wheel  116192 15 Feb 07:12 socicon.woff
+-rwxr-xr-x  1 pknw1  wheel   64488 15 Feb 07:12 socicon.woff2
+
+./publish/assets/theme:
+total 0
+drwxr-xr-x  3 pknw1  wheel  96 15 Feb 07:12 css
+drwxr-xr-x  3 pknw1  wheel  96 15 Feb 07:12 js
+
+./publish/assets/theme/css:
+total 32
+-rwxr-xr-x  1 pknw1  wheel  14855 15 Feb 07:12 style.css
+
+./publish/assets/theme/js:
+total 80
+-rwxr-xr-x  1 pknw1  wheel  39492 15 Feb 07:12 script.js
+
+./publish/assets/web:
+total 0
+drwxr-xr-x  5 pknw1  wheel  160 15 Feb 07:12 assets
+
+./publish/assets/web/assets:
+total 0
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 mobirise-icons
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 mobirise-icons-bold
+drwxr-xr-x  7 pknw1  wheel  224 15 Feb 07:12 mobirise-icons2
+
+./publish/assets/web/assets/mobirise-icons:
+total 736
+-rwxr-xr-x  1 pknw1  wheel    7613 15 Feb 07:12 mobirise-icons.css
+-rwxr-xr-x  1 pknw1  wheel   51628 15 Feb 07:12 mobirise-icons.eot
+-rwxr-xr-x  1 pknw1  wheel  206219 15 Feb 07:12 mobirise-icons.svg
+-rwxr-xr-x  1 pknw1  wheel   51464 15 Feb 07:12 mobirise-icons.ttf
+-rwxr-xr-x  1 pknw1  wheel   51540 15 Feb 07:12 mobirise-icons.woff
+
+./publish/assets/web/assets/mobirise-icons-bold:
+total 496
+-rwxr-xr-x  1 pknw1  wheel    7809 15 Feb 07:12 mobirise-icons-bold.css
+-rwxr-xr-x  1 pknw1  wheel   37476 15 Feb 07:12 mobirise-icons-bold.eot
+-rwxr-xr-x  1 pknw1  wheel  119800 15 Feb 07:12 mobirise-icons-bold.svg
+-rwxr-xr-x  1 pknw1  wheel   37288 15 Feb 07:12 mobirise-icons-bold.ttf
+-rwxr-xr-x  1 pknw1  wheel   37364 15 Feb 07:12 mobirise-icons-bold.woff
+
+./publish/assets/web/assets/mobirise-icons2:
+total 336
+-rwxr-xr-x  1 pknw1  wheel   8709 15 Feb 07:12 mobirise2.css
+-rwxr-xr-x  1 pknw1  wheel  25468 15 Feb 07:12 mobirise2.eot
+-rwxr-xr-x  1 pknw1  wheel  72845 15 Feb 07:12 mobirise2.svg
+-rwxr-xr-x  1 pknw1  wheel  25280 15 Feb 07:12 mobirise2.ttf
+-rwxr-xr-x  1 pknw1  wheel  25356 15 Feb 07:12 mobirise2.woff
+
+./publish/assets/ytplayer:
+total 56
+-rwxr-xr-x  1 pknw1  wheel  27866 15 Feb 07:12 index.js
